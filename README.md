@@ -107,12 +107,12 @@ rocket_league_readme_stats/
 
 | Componente | Tecnologia |
 |---|---|
-| **Coleta (Camada 1)** | [`curl_cffi`](https://github.com/yifeikong/curl_cffi) — impersona TLS do Chrome |
+| **Coleta (Camada 1)** | [`curl_cffi`](https://github.com/yifeikong/curl_cffi) — API JSON direta |
 | **Coleta (Camada 2)** | [`Playwright`](https://playwright.dev/python/) + [`playwright-stealth`](https://github.com/AtuboDad/playwright_stealth) |
-| **Parsing HTML** | `BeautifulSoup4` + `lxml` |
+| **Processamento** | `json` nativo para manipulação de dados e histórico |
 | **Visualização** | `matplotlib` (sparkline PNG → base64) |
 | **Template** | SVG nativo com placeholders |
-| **Automação** | GitHub Actions (cron diário) |
+| **Automação** | GitHub Actions (cron diário + `xvfb` para headed browser) |
 
 ---
 
