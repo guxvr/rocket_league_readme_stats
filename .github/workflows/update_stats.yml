@@ -53,9 +53,34 @@ jobs:
       # 5. Executa o script principal
       # ----------------------------------------------------------------
       - name: Run stats updater
-        run: xvfb-run python src/main.py
         env:
           EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
+        run: |
+          max_retries=5
+          retry_delay=60
+          attempt=1
+          success=false
+
+          while [ $attempt -le $max_retries ]; do
+            echo "Tentativa $attempt de $max_retries..."
+            if xvfb-run python src/main.py; then
+              echo "✅ Sucesso na tentativa $attempt!"
+              success=true
+              break
+            else
+              echo "❌ Falha na tentativa $attempt."
+              if [ $attempt -lt $max_retries ]; then
+                echo "⏳ Aguardando $retry_delay segundos antes da próxima tentativa..."
+                sleep $retry_delay
+              fi
+              attempt=$((attempt + 1))
+            fi
+          done
+
+          if [ "$success" = false ]; then
+            echo "❌ Todas as $max_retries tentativas falharam."
+            exit 1
+          fi
 
       # ----------------------------------------------------------------
       # 6. Commita e faz push se houve mudanças em assets/ ou data/
