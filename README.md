@@ -1,14 +1,14 @@
 # 🚀 Rocket League README Stats
 
-Widget SVG gerado automaticamente com as suas estatísticas ranqueadas do Rocket League, atualizado diariamente via GitHub Actions e exibido no Profile README do GitHub.
+An auto-generated SVG widget showcasing your Rocket League ranked statistics. It updates daily via GitHub Actions and can be displayed directly on your GitHub Profile README.
 
 ---
 
 ## 📊 Preview
 
-> *Os cards abaixo são gerados automaticamente após a primeira execução.*
+> *The cards below are automatically generated after the first run.*
 
-| Modo | Widget |
+| Mode | Widget |
 |---|---|
 | 3v3 — Ranked Standard | `assets/rl-stats-3v3.svg` |
 | 2v2 — Ranked Doubles | `assets/rl-stats-2v2.svg` |
@@ -16,32 +16,32 @@ Widget SVG gerado automaticamente com as suas estatísticas ranqueadas do Rocket
 
 ---
 
-## ⚙️ Como usar no seu Profile README
+## ⚙️ How to Use on Your Profile README
 
-Adicione a tag `<img>` correspondente ao modo que deseja exibir no seu `README.md` de perfil:
+Add the corresponding `<img>` tag for the mode you want to display in your profile `README.md`:
 
 ```html
-<!-- Substitua SEU_USUARIO pelo seu nome de usuário do GitHub -->
+<!-- Replace YOUR_USERNAME with your actual GitHub username -->
 
-<!-- Modo 3v3 -->
+<!-- 3v3 Mode -->
 <a href="https://rocketleague.tracker.network/rocket-league/profile/epic/guxvr/overview">
   <img
-    src="https://raw.githubusercontent.com/SEU_USUARIO/rocket_league_readme_stats/main/assets/rl-stats-3v3.svg"
+    src="https://raw.githubusercontent.com/YOUR_USERNAME/rocket_league_readme_stats/main/assets/rl-stats-3v3.svg"
     alt="Rocket League 3v3 Stats"
     width="495"
   />
 </a>
 
-<!-- Modo 2v2 -->
+<!-- 2v2 Mode -->
 <img
-  src="https://raw.githubusercontent.com/SEU_USUARIO/rocket_league_readme_stats/main/assets/rl-stats-2v2.svg"
+  src="https://raw.githubusercontent.com/YOUR_USERNAME/rocket_league_readme_stats/main/assets/rl-stats-2v2.svg"
   alt="Rocket League 2v2 Stats"
   width="495"
 />
 
-<!-- Modo 1v1 -->
+<!-- 1v1 Mode -->
 <img
-  src="https://raw.githubusercontent.com/SEU_USUARIO/rocket_league_readme_stats/main/assets/rl-stats-1v1.svg"
+  src="https://raw.githubusercontent.com/YOUR_USERNAME/rocket_league_readme_stats/main/assets/rl-stats-1v1.svg"
   alt="Rocket League 1v1 Stats"
   width="495"
 />
@@ -49,73 +49,73 @@ Adicione a tag `<img>` correspondente ao modo que deseja exibir no seu `README.m
 
 ---
 
-## 🔧 Setup (para fork ou uso próprio)
+## 🔧 Setup (for fork or personal use)
 
-### 1. Pré-requisitos
+### 1. Prerequisites
 
 - Python 3.12+
-- Conta no [Rocket League Tracker Network](https://rocketleague.tracker.network/)
+- A [Rocket League Tracker Network](https://rocketleague.tracker.network/) account
 
-### 2. Configurar o Secret no repositório
+### 2. Configure Repository Secret
 
-Vá em **Settings → Secrets and variables → Actions → New repository secret**:
+Go to **Settings → Secrets and variables → Actions → New repository secret**:
 
-| Nome | Valor |
+| Name | Value |
 |---|---|
-| `EPIC_DISPLAY_NAME` | Seu nome de exibição no TRN (ex: `guxvr`) |
+| `EPIC_DISPLAY_NAME` | Your TRN display name (e.g., `guxvr`) |
 
-### 3. Habilitar permissões de escrita para o Actions
+### 3. Enable Actions Write Permissions
 
-Vá em **Settings → Actions → General → Workflow permissions** e selecione:
+Go to **Settings → Actions → General → Workflow permissions** and select:
 > ✅ **Read and write permissions**
 
-### 4. Testar manualmente
+### 4. Run Manually to Test
 
-Vá em **Actions → Update Rocket League Stats → Run workflow**.
+Go to **Actions → Update Rocket League Stats → Run workflow**.
 
-### 5. Aguardar o cron automático
+### 5. Wait for the Cron Job
 
-O workflow roda automaticamente todo dia às **09:00 UTC (06:00 horário de Brasília)**.
+The workflow runs automatically every day at **09:00 UTC**.
 
 ---
 
-## 🏗️ Estrutura do Projeto
+## 🏗️ Project Structure
 
 ```
 rocket_league_readme_stats/
-├── .github/workflows/update_stats.yml   # Automação CI/CD
-├── assets/                              # SVGs gerados (output)
+├── .github/workflows/update_stats.yml   # CI/CD Automation
+├── assets/                              # Generated SVGs (output)
 │   ├── rl-stats-1v1.svg
 │   ├── rl-stats-2v2.svg
 │   └── rl-stats-3v3.svg
 ├── data/
-│   └── history.json                     # Histórico de MMR (30 dias)
+│   └── history.json                     # MMR history (last 30 days)
 ├── src/
-│   ├── main.py                          # Orquestrador
-│   ├── scraper.py                       # Coleta (curl_cffi + Playwright)
-│   ├── history_manager.py               # Gestão do histórico
-│   ├── chart_generator.py               # Sparkline matplotlib
-│   └── svg_builder.py                   # Injeção no template SVG
+│   ├── main.py                          # Orchestrator
+│   ├── scraper.py                       # Data collection (curl_cffi + Playwright)
+│   ├── history_manager.py               # History management
+│   ├── chart_generator.py               # matplotlib sparklines
+│   └── svg_builder.py                   # SVG template injection
 ├── templates/
-│   └── card_template.svg                # Template com placeholders
+│   └── card_template.svg                # Base SVG template with placeholders
 └── requirements.txt
 ```
 
 ---
 
-## 🛡️ Tecnologias
+## 🛡️ Technologies
 
-| Componente | Tecnologia |
+| Component | Technology |
 |---|---|
-| **Coleta (Camada 1)** | [`curl_cffi`](https://github.com/yifeikong/curl_cffi) — API JSON direta |
-| **Coleta (Camada 2)** | [`Playwright`](https://playwright.dev/python/) + [`playwright-stealth`](https://github.com/AtuboDad/playwright_stealth) |
-| **Processamento** | `json` nativo para manipulação de dados e histórico |
-| **Visualização** | `matplotlib` (sparkline PNG → base64) |
-| **Template** | SVG nativo com placeholders |
-| **Automação** | GitHub Actions (cron diário + `xvfb` para headed browser) |
+| **Scraper (Layer 1)** | [`curl_cffi`](https://github.com/yifeikong/curl_cffi) — Direct JSON API |
+| **Scraper (Layer 2)** | [`Playwright`](https://playwright.dev/python/) + [`playwright-stealth`](https://github.com/AtuboDad/playwright_stealth) |
+| **Processing** | Native `json` for data and history manipulation |
+| **Visualization** | `matplotlib` (PNG sparkline → base64) |
+| **Templating** | Native SVG with placeholders |
+| **Automation** | GitHub Actions (Daily cron + `xvfb` for headed browser) |
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-MIT — veja [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
