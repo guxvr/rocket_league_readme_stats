@@ -3,7 +3,7 @@
 curl-cffi==0.7.3
 
 # Fallback: headless browser (intercepts the same API call)
-playwright==1.44.0
+playwright==1.60.0
 
 # Setup tools (required by some dependencies)
 setuptools
