@@ -1,11 +1,11 @@
 name: Update Rocket League Stats
 
 on:
-  # Roda todo dia às 09:00 UTC (06:00 horário de Brasília)
+  # Runs every day at 09:00 UTC (06:00 Brasília time)
   schedule:
     - cron: "0 9 * * *"
 
-  # Permite disparo manual pela aba Actions (útil para testes)
+  # Allows manual triggering from the Actions tab (useful for testing)
   workflow_dispatch:
 
 jobs:
@@ -14,21 +14,21 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # necessário para git push
+      contents: write   # needed for git push
 
     steps:
       # ----------------------------------------------------------------
-      # 1. Checkout do repositório
+      # 1. Repository checkout
       # ----------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Usa o token padrão do Actions (já tem permissão de push
-          # via permissions: contents: write acima)
+          # Uses Action's standard token (already have push permission
+          # via permissions: contents: write above)
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # ----------------------------------------------------------------
-      # 2. Configura Python
+      # 2. Setup Python
       # ----------------------------------------------------------------
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -37,40 +37,40 @@ jobs:
           cache: "pip"
 
       # ----------------------------------------------------------------
-      # 3. Instala dependências Python
+      # 3. Install Python dependencies
       # ----------------------------------------------------------------
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
       # ----------------------------------------------------------------
-      # 4. Instala Playwright (fallback da Camada 2)
-      #    Só instala o Chromium para minimizar tempo/espaço
+      # 4. Install Playwright (fallback layer)
+      #    Only installs Chromium to minimize time/space
       # ----------------------------------------------------------------
       - name: Install Playwright Chromium (fallback layer)
         run: playwright install chromium --with-deps
 
       # ----------------------------------------------------------------
-      # 5. Executa o script principal
+      # 5. Execute main script
       # ----------------------------------------------------------------
       - name: Run stats updater
         env:
           EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
         run: |
-          max_retries=5
-          retry_delay=60
+          max_retries=10
+          retry_delay=30
           attempt=1
           success=false
 
           while [ $attempt -le $max_retries ]; do
-            echo "Tentativa $attempt de $max_retries..."
+            echo "Attempt $attempt of $max_retries..."
             if xvfb-run python src/main.py; then
-              echo "✅ Sucesso na tentativa $attempt!"
+              echo "Success on attempt $attempt!"
               success=true
               break
             else
-              echo "❌ Falha na tentativa $attempt."
+              echo "Failed on attempt $attempt."
               if [ $attempt -lt $max_retries ]; then
-                echo "⏳ Aguardando $retry_delay segundos antes da próxima tentativa..."
+                echo " Waiting $retry_delay seconds before next attempt..."
                 sleep $retry_delay
               fi
               attempt=$((attempt + 1))
@@ -78,12 +78,12 @@ jobs:
           done
 
           if [ "$success" = false ]; then
-            echo "❌ Todas as $max_retries tentativas falharam."
+            echo "All $max_retries attempts failed."
             exit 1
           fi
 
       # ----------------------------------------------------------------
-      # 6. Commita e faz push se houve mudanças em assets/ ou data/
+      # 6. Commit and push if changed
       # ----------------------------------------------------------------
       - name: Commit and push if changed
         run: |
@@ -92,12 +92,12 @@ jobs:
 
           git add assets/ data/
 
-          # Só commita se houver mudanças staged
+          # Only commits if have staged changes
           if git diff --staged --quiet; then
-            echo "✅ Nenhuma mudança detectada — nada a commitar."
+            echo " No changes detected — nothing to commit."
           else
             DATE=$(date -u +%Y-%m-%d)
             git commit -m "chore(stats): update RL stats [${DATE}] [skip ci]"
             git push
-            echo "✅ Stats atualizados e enviados ao repositório."
+            echo " Stats updated and pushed to repository."
           fi
