@@ -1,0 +1,78 @@
+name: Update Rocket League Stats
+
+on:
+  # Roda todo dia às 09:00 UTC (06:00 horário de Brasília)
+  schedule:
+    - cron: "0 9 * * *"
+
+  # Permite disparo manual pela aba Actions (útil para testes)
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    name: Fetch & Generate SVG Stats
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # necessário para git push
+
+    steps:
+      # ----------------------------------------------------------------
+      # 1. Checkout do repositório
+      # ----------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Usa o token padrão do Actions (já tem permissão de push
+          # via permissions: contents: write acima)
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ----------------------------------------------------------------
+      # 2. Configura Python
+      # ----------------------------------------------------------------
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      # ----------------------------------------------------------------
+      # 3. Instala dependências Python
+      # ----------------------------------------------------------------
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # ----------------------------------------------------------------
+      # 4. Instala Playwright (fallback da Camada 2)
+      #    Só instala o Chromium para minimizar tempo/espaço
+      # ----------------------------------------------------------------
+      - name: Install Playwright Chromium (fallback layer)
+        run: playwright install chromium --with-deps
+
+      # ----------------------------------------------------------------
+      # 5. Executa o script principal
+      # ----------------------------------------------------------------
+      - name: Run stats updater
+        run: python src/main.py
+        env:
+          EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
+
+      # ----------------------------------------------------------------
+      # 6. Commita e faz push se houve mudanças em assets/ ou data/
+      # ----------------------------------------------------------------
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "rl-stats-bot[bot]"
+          git config user.email "bot@users.noreply.github.com"
+
+          git add assets/ data/
+
+          # Só commita se houver mudanças staged
+          if git diff --staged --quiet; then
+            echo "✅ Nenhuma mudança detectada — nada a commitar."
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "chore(stats): update RL stats [${DATE}] [skip ci]"
+            git push
+            echo "✅ Stats atualizados e enviados ao repositório."
+          fi

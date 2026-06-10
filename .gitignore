@@ -1,0 +1,19 @@
+project_overview.md
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Playwright
+playwright_debug/
+playwright-report/
+test-results/
+
+# Temp / debug
+*.log
+*.png

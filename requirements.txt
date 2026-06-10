@@ -1,0 +1,12 @@
+# --- Data collection ---
+# Primary: direct JSON API call with Chrome TLS impersonation
+curl-cffi==0.7.3
+
+# Fallback: headless browser (intercepts the same API call)
+playwright==1.44.0
+
+# Setup tools (required by some dependencies)
+setuptools
+
+# --- Visualization ---
+matplotlib==3.9.0

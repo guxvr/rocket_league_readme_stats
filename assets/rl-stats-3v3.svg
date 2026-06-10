@@ -1,0 +1,231 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="495"
+  height="195"
+  viewBox="0 0 495 195"
+  role="img"
+  aria-label="Rocket League Stats — guxvr"
+>
+  <title>Rocket League Stats — guxvr</title>
+
+  <defs>
+    <!-- Card background gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060E18;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050B12;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Border gradient (blue → orange) -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A8E8;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow effect for MMR value -->
+    <filter id="mmr-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Clip path for the card rounded corners -->
+    <clipPath id="card-clip">
+      <rect x="1" y="1" width="493" height="193" rx="11" ry="11" />
+    </clipPath>
+
+    <!-- Rank badge glow -->
+    <filter id="badge-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Diagonal line pattern for subtle texture -->
+    <pattern id="texture" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#00A8E8" stroke-width="0.3" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== BORDER (gradient, 1px) ===== -->
+  <rect x="0" y="0" width="495" height="195" rx="12" ry="12"
+        fill="url(#border-grad)" />
+
+  <!-- ===== CARD BACKGROUND ===== -->
+  <rect x="1" y="1" width="493" height="193" rx="11" ry="11"
+        fill="url(#bg-grad)" clip-path="url(#card-clip)" />
+
+  <!-- Subtle texture overlay -->
+  <rect x="1" y="1" width="493" height="193" rx="11" ry="11"
+        fill="url(#texture)" clip-path="url(#card-clip)" />
+
+  <!-- ===== TOP HEADER BAR ===== -->
+  <!-- Thin accent line below header -->
+  <rect x="1" y="46" width="493" height="1" fill="#00A8E8" fill-opacity="0.25" />
+
+  <!-- Rocket League Logo Icon (geometric RL-style car/rocket shape) -->
+  <!-- Outer circle -->
+  <circle cx="28" cy="24" r="14" fill="none" stroke="#00A8E8" stroke-width="1.5" stroke-opacity="0.9"/>
+  <!-- Inner rocket/boost shape -->
+  <path d="M22 29 L28 13 L34 29 L28 25 Z" fill="#00A8E8" fill-opacity="0.95"/>
+  <path d="M22 29 L28 25 L28 29 Z" fill="#FF6B35" fill-opacity="0.9"/>
+  <!-- Side wings -->
+  <path d="M18 27 L22 22 L22 29 Z" fill="#00A8E8" fill-opacity="0.6"/>
+  <path d="M38 27 L34 22 L34 29 Z" fill="#00A8E8" fill-opacity="0.6"/>
+
+  <!-- "ROCKET LEAGUE" label -->
+  <text x="48" y="19"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="8.5"
+        font-weight="700"
+        letter-spacing="2.5"
+        fill="#00A8E8"
+        fill-opacity="0.85">ROCKET LEAGUE</text>
+
+  <!-- Player name -->
+  <text x="48" y="35"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        font-weight="600"
+        fill="#FFFFFF"
+        fill-opacity="0.95">guxvr</text>
+
+  <!-- Mode label (top right) -->
+  <text x="488" y="19"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="8.5"
+        font-weight="600"
+        letter-spacing="1.5"
+        fill="#8899AA"
+        text-anchor="end">3V3 · RANKED STANDARD</text>
+
+  <!-- Last updated (top right, below mode) -->
+  <text x="488" y="35"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="8"
+        fill="#556677"
+        text-anchor="end">Updated Jun 09, 2026</text>
+
+
+  <!-- ===== MAIN CONTENT AREA ===== -->
+
+  <!-- LEFT COLUMN: Rank info -->
+
+  <!-- Rank name -->
+  <text x="22" y="70"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        font-weight="600"
+        letter-spacing="1.8"
+        fill="#8899AA"
+        fill-opacity="0.9">CURRENT RANK</text>
+
+  <!-- Rank badge circle -->
+  <circle cx="30" cy="96" r="10"
+          fill="#2196F3"
+          fill-opacity="0.18"
+          stroke="#2196F3"
+          stroke-width="1.5"
+          filter="url(#badge-glow)" />
+  <circle cx="30" cy="96" r="5" fill="#2196F3" fill-opacity="0.9" />
+
+  <!-- Rank name text -->
+  <text x="46" y="101"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#FFFFFF"
+        fill-opacity="0.97">Diamond II</text>
+
+  <!-- Divider dot -->
+  <circle cx="220" cy="47" r="0" fill="none" />
+
+  <!-- RIGHT COLUMN: MMR value -->
+  <!-- "MMR" label -->
+  <text x="488" y="70"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        font-weight="600"
+        letter-spacing="1.8"
+        fill="#8899AA"
+        fill-opacity="0.9"
+        text-anchor="end">MMR</text>
+
+  <!-- MMR big number -->
+  <text x="488" y="103"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="32"
+        font-weight="800"
+        fill="#00A8E8"
+        text-anchor="end"
+        filter="url(#mmr-glow)">931</text>
+
+
+  <!-- ===== CHART AREA ===== -->
+  <!-- Thin separator line above chart -->
+  <rect x="14" y="115" width="467" height="1" fill="#00A8E8" fill-opacity="0.1" />
+
+  <!-- Embedded sparkline chart (base64 PNG) -->
+  <image
+    x="14" y="120"
+    width="467" height="55"
+    href="data:image/png;base64,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"
+    preserveAspectRatio="none"
+  />
+
+
+  <!-- ===== BOTTOM STATS BAR ===== -->
+  <rect x="1" y="178" width="493" height="1" fill="#00A8E8" fill-opacity="0.15" />
+
+  <!-- Peak MMR (left) -->
+  <text x="22" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        fill="#556677">PEAK</text>
+  <text x="50" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        font-weight="700"
+        fill="#8899AA">931</text>
+
+  <!-- Separator dot -->
+  <circle cx="100" cy="188" r="1.5" fill="#334455"/>
+
+  <!-- Trend (center-left) -->
+  <text x="112" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        fill="#556677">30d</text>
+  <text x="132" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        font-weight="700"
+        fill="#8899AA">→ 0</text>
+
+  <!-- Separator dot -->
+  <circle cx="185" cy="188" r="1.5" fill="#334455"/>
+
+  <!-- Sessions placeholder (right side) -->
+  <text x="197" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        fill="#556677">SESSIONS</text>
+  <text x="243" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9"
+        font-weight="700"
+        fill="#8899AA">1</text>
+
+  <!-- Source badge (far right) -->
+  <text x="488" y="191"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="8"
+        fill="#2A3A4A"
+        text-anchor="end">tracker.gg</text>
+
+</svg>
