@@ -247,8 +247,8 @@ def _scrape_layer2() -> dict:
         log.warning("  ✗ Nenhum dado capturado via Playwright.")
         return {}
 
-    except ImportError:
-        log.warning("  ✗ Playwright não instalado.")
+    except ImportError as e:
+        log.warning("  ✗ Playwright ou dependência não instalada: %s", e)
         return {}
     except Exception as exc:
         log.error("  ✗ Erro na Camada 2: %s", exc)

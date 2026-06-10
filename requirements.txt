@@ -7,7 +7,7 @@ playwright==1.60.0
 playwright-stealth==1.0.6
 
 # Setup tools (required by playwright-stealth 1.0.6)
-setuptools
+setuptools<70.0.0
 
 # --- Visualization ---
 matplotlib==3.9.0
