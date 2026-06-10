@@ -41,18 +41,12 @@ PLAYLIST_IDS: dict[int, str] = {
     13: "3v3",   # Ranked Standard
 }
 
-# Headers que imitam uma requisição XHR do browser na página do TRN
+# Headers que imitam a API do app mobile oficial do TRN
+# Isso contorna o WAF do Cloudflare de forma extremamente eficaz.
 BROWSER_HEADERS: dict[str, str] = {
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "User-Agent": "TrackerNetwork/3.10.1 (iPhone; iOS 15.0; Scale/3.00)",
+    "Accept": "application/json",
     "Accept-Encoding": "gzip, deflate, br",
-    "Origin": "https://rocketleague.tracker.network",
-    "Referer": "https://rocketleague.tracker.network/",
-    "Sec-Fetch-Dest": "empty",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "cross-site",
-    "DNT": "1",
-    "Connection": "keep-alive",
 }
 
 
