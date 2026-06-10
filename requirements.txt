@@ -4,8 +4,9 @@ curl-cffi==0.7.3
 
 # Fallback: headless browser (intercepts the same API call)
 playwright==1.60.0
+playwright-stealth==1.0.6
 
-# Setup tools (required by some dependencies)
+# Setup tools (required by playwright-stealth 1.0.6)
 setuptools
 
 # --- Visualization ---

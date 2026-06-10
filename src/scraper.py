@@ -150,7 +150,7 @@ def _scrape_layer1() -> dict:
         log.info("🔵 Camada 1 — curl_cffi (API direta) iniciando...")
         resp = cffi_requests.get(
             PROFILE_URL,
-            impersonate="chrome120",
+            impersonate="safari15_5",
             headers=BROWSER_HEADERS,
             timeout=20,
         )
@@ -196,6 +196,7 @@ def _scrape_layer2() -> dict:
     """
     try:
         from playwright.sync_api import sync_playwright
+        from playwright_stealth import stealth_sync
 
         log.info("🟡 Camada 2 — Playwright (intercept de API) iniciando...")
 
@@ -211,9 +212,10 @@ def _scrape_layer2() -> dict:
                         pass
 
         with sync_playwright() as p:
+            is_github_actions = os.environ.get("GITHUB_ACTIONS") == "true"
             browser = p.chromium.launch(
-                headless=True,
-                args=["--no-sandbox", "--disable-setuid-sandbox"],
+                headless=not is_github_actions,
+                args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-blink-features=AutomationControlled"],
             )
             context = browser.new_context(
                 user_agent=(
@@ -224,6 +226,7 @@ def _scrape_layer2() -> dict:
                 locale="pt-BR",
             )
             page = context.new_page()
+            stealth_sync(page)
             page.on("response", intercept_response)
 
             page_url = f"https://rocketleague.tracker.network/rocket-league/profile/epic/{DISPLAY_NAME}/overview"

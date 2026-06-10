@@ -53,7 +53,7 @@ jobs:
       # 5. Executa o script principal
       # ----------------------------------------------------------------
       - name: Run stats updater
-        run: python src/main.py
+        run: xvfb-run python src/main.py
         env:
           EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
 
