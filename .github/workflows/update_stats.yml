@@ -55,6 +55,7 @@ jobs:
       - name: Run stats updater
         env:
           EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: |
           max_retries=10
           retry_delay=30
