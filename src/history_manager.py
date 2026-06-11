@@ -1,8 +1,8 @@
 """
 history_manager.py
 ==================
-Gerencia o arquivo data/history.json, que acumula leituras diárias
-de MMR para os 3 modos. Mantém uma janela deslizante de 30 dias.
+Manages the data/history.json file, which accumulates daily MMR
+readings for the 3 modes. Maintains a 30-day sliding window.
 """
 
 from __future__ import annotations
@@ -15,10 +15,10 @@ from typing import Optional
 
 log = logging.getLogger(__name__)
 
-# Caminho padrão para o histórico (relativo à raiz do repositório)
+# Default path for the history file (relative to the repository root)
 HISTORY_FILE = Path(__file__).parent.parent / "data" / "history.json"
 
-# Janela de retenção em dias
+# Retention window in days
 RETENTION_DAYS = 30
 
 
@@ -27,20 +27,20 @@ RETENTION_DAYS = 30
 # ---------------------------------------------------------------------------
 
 def load_history(path: Path = HISTORY_FILE) -> dict:
-    """Carrega o history.json. Se não existir, retorna estrutura vazia."""
+    """Loads history.json. Returns an empty structure if it doesn't exist."""
     if not path.exists():
-        log.warning("history.json não encontrado. Criando estrutura vazia.")
+        log.warning("history.json not found. Creating empty structure.")
         return _empty_history()
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def save_history(history: dict, path: Path = HISTORY_FILE) -> None:
-    """Salva o history.json formatado."""
+    """Saves the formatted history.json."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2, ensure_ascii=False)
-    log.info("💾 history.json salvo em %s", path)
+    log.info("history.json saved in %s", path)
 
 
 def _empty_history() -> dict:
@@ -55,13 +55,13 @@ def _empty_history() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Mutação do histórico
+# History Mutation
 # ---------------------------------------------------------------------------
 
 def append_today(history: dict, scraped_data: dict) -> dict:
     """
-    Adiciona (ou atualiza) a entrada de hoje no histórico para cada modo.
-    Se já existe uma entrada com a data de hoje, ela é substituída.
+    Appends (or updates) today's entry in the history for each mode.
+    If an entry for today already exists, it is replaced.
     """
     today = date.today().isoformat()
     modes_data: dict = scraped_data.get("modes", {})
@@ -69,7 +69,7 @@ def append_today(history: dict, scraped_data: dict) -> dict:
     for mode_key in ("1v1", "2v2", "3v3"):
         mode_info = modes_data.get(mode_key)
         if not mode_info:
-            log.debug("  – Modo %s sem dados hoje, pulando.", mode_key)
+            log.debug("  Mode %s has no data today, skipping.", mode_key)
             continue
 
         entry = {
@@ -81,18 +81,18 @@ def append_today(history: dict, scraped_data: dict) -> dict:
 
         entries: list = history["modes"].setdefault(mode_key, [])
 
-        # Remove entrada duplicada de hoje (se houver)
+        # Remove today's duplicate entry (if any)
         history["modes"][mode_key] = [e for e in entries if e["date"] != today]
         history["modes"][mode_key].append(entry)
 
-        log.info("  ✓ %s — MMR %d (%s) adicionado para %s",
+        log.info("  %s - MMR %d (%s) added for %s",
                  mode_key, entry["mmr"], entry["rank"], today)
 
     return history
 
 
 def prune_old_entries(history: dict, days: int = RETENTION_DAYS) -> dict:
-    """Remove entradas mais antigas que `days` dias."""
+    """Removes entries older than `days` days."""
     cutoff = (date.today() - timedelta(days=days)).isoformat()
 
     for mode_key in history.get("modes", {}):
@@ -103,26 +103,26 @@ def prune_old_entries(history: dict, days: int = RETENTION_DAYS) -> dict:
         ]
         removed = before - len(history["modes"][mode_key])
         if removed:
-            log.debug("  🗑 %s: %d entrada(s) antiga(s) removida(s).", mode_key, removed)
+            log.debug("  %s: %d old entry/entries removed.", mode_key, removed)
 
     return history
 
 
 # ---------------------------------------------------------------------------
-# Métricas derivadas
+# Derived Metrics
 # ---------------------------------------------------------------------------
 
 def compute_metrics(history: dict, mode: str) -> dict:
     """
-    Calcula métricas a partir do histórico para um modo específico.
+    Computes metrics from the history for a specific mode.
 
-    Retorna:
-      mmr_history   : lista de MMRs em ordem cronológica
-      peak_mmr      : maior MMR dos últimos 30 dias
-      trend_value   : variação entre a leitura mais recente e a mais antiga
-      trend_arrow   : "▲" ou "▼"
-      trend_color   : "#4CAF50" (verde) ou "#F44336" (vermelho) ou "#8899AA" (neutro)
-      session_count : número de dias com dados
+    Returns:
+      mmr_history   : list of MMRs in chronological order
+      peak_mmr      : highest MMR in the last 30 days
+      trend_value   : difference between the most recent and the oldest reading
+      trend_arrow   : "↑" or "↓"
+      trend_color   : "#4CAF50" (green) or "#F44336" (red) or "#8899AA" (neutral)
+      session_count : number of days with data
     """
     entries: list[dict] = sorted(
         history.get("modes", {}).get(mode, []),
@@ -141,9 +141,9 @@ def compute_metrics(history: dict, mode: str) -> dict:
     diff = latest - earliest
 
     if diff > 0:
-        arrow, color = "▲", "#4CAF50"
+        arrow, color = "↑", "#4CAF50"
     elif diff < 0:
-        arrow, color = "▼", "#F44336"
+        arrow, color = "↓", "#F44336"
     else:
         arrow, color = "→", "#8899AA"
 
@@ -171,7 +171,7 @@ def _empty_metrics() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Execução direta (para testes)
+# Direct Execution (for testing)
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":

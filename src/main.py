@@ -1,16 +1,16 @@
 """
 main.py
 =======
-Orquestrador principal do Rocket League README Stats.
+Main orchestrator for the Rocket League README Stats.
 
-Sequência de execução:
-  1. Coleta MMR atual via scraper (curl_cffi → Playwright)
-  2. Carrega histórico, adiciona leitura de hoje, prune, salva
-  3. Para cada modo (1v1, 2v2, 3v3):
-     a. Computa métricas do histórico
-     b. Gera sparkline (base64)
-     c. Injeta no template SVG e salva em assets/
-  4. Loga resumo final
+Execution sequence:
+  1. Fetch current MMR via scraper (curl_cffi -> Playwright -> ScraperAPI -> cloudscraper -> requests)
+  2. Load history, append today's reading, prune old entries, and save
+  3. For each mode (1v1, 2v2, 3v3):
+     a. Compute historical metrics
+     b. Generate sparkline (base64)
+     c. Inject into SVG template and save in assets/
+  4. Log final summary
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ import logging
 import sys
 from pathlib import Path
 
-# Garante que src/ está no path quando rodado diretamente
+# Ensure src/ is in the path when run directly
 sys.path.insert(0, str(Path(__file__).parent))
 
 import scraper
@@ -40,77 +40,78 @@ log = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
-# Constantes
+# Constants
 # ---------------------------------------------------------------------------
 
 MODES = ("1v1", "2v2", "3v3")
 
 
 # ---------------------------------------------------------------------------
-# Orquestrador
+# Orchestrator
 # ---------------------------------------------------------------------------
 
 def run() -> None:
     log.info("=" * 60)
-    log.info("🚀 Rocket League README Stats — iniciando atualização")
+    log.info("Rocket League README Stats - starting update")
     log.info("=" * 60)
 
     # ------------------------------------------------------------------
-    # 1. Coleta de dados
+    # 1. Data collection
     # ------------------------------------------------------------------
-    log.info("\n📡 Etapa 1/4 — Coletando dados do TRN...")
+    log.info("\nStep 1/4 - Fetching data from TRN...")
     scraped = scraper.fetch_stats()
 
     if not scraped["success"]:
-        log.error("❌ Falha na coleta de dados. Encerrando sem atualizar arquivos.")
+        log.error("Failed to collect data. Exiting without updating files.")
         sys.exit(1)
 
     log.info("   Player  : %s", scraped["player_name"])
-    log.info("   Fonte   : Camada %s", scraped["source_layer"])
+    log.info("   Source  : Layer %s", scraped["source_layer"])
     for mode in MODES:
         info = scraped["modes"].get(mode)
         if info:
-            log.info("   %s      : %d MMR — %s", mode, info["mmr"], info["rank"])
+            log.info("   %s      : %d MMR - %s", mode, info["mmr"], info["rank"])
         else:
-            log.warning("   %s      : sem dados", mode)
+            log.warning("   %s      : no data", mode)
 
     # ------------------------------------------------------------------
-    # 2. Histórico
+    # 2. History
     # ------------------------------------------------------------------
-    log.info("\n📂 Etapa 2/4 — Atualizando histórico (30 dias)...")
+    log.info("\nStep 2/4 - Updating history (30 days)...")
     history = history_manager.load_history()
     history = history_manager.append_today(history, scraped)
     history = history_manager.prune_old_entries(history)
     history_manager.save_history(history)
 
     # ------------------------------------------------------------------
-    # 3. Geração dos SVGs
+    # 3. SVG Generation
     # ------------------------------------------------------------------
-    log.info("\n🎨 Etapa 3/4 — Gerando SVGs...")
+    log.info("\nStep 3/4 - Generating SVGs...")
 
     generated: list[str] = []
 
     for mode in MODES:
         mode_info = scraped["modes"].get(mode)
         if not mode_info:
-            log.warning("  ⏭ Modo %s sem dados — SVG não gerado.", mode)
+            log.warning("  Mode %s without data - SVG not generated.", mode)
             continue
 
-        log.info("  Processando modo %s...", mode)
+        log.info("  Processing mode %s...", mode)
 
-        # Métricas do histórico
+        # Historical metrics
         metrics = history_manager.compute_metrics(history, mode)
 
         # Sparkline
         chart_b64 = chart_generator.generate_sparkline(metrics["mmr_history"])
 
-        # SVG final
+        # Final SVG
         svg_content = svg_builder.build_svg(
             mode=mode,
             player_name=scraped["player_name"],
             mmr=mode_info["mmr"],
             rank=mode_info["rank"],
             rank_tier=mode_info["rank_tier"],
+            sprite=mode_info.get("sprite", "unranked.png"),
             metrics=metrics,
             chart_b64=chart_b64,
         )
@@ -118,11 +119,11 @@ def run() -> None:
         generated.append(mode)
 
     # ------------------------------------------------------------------
-    # 4. Resumo
+    # 4. Summary
     # ------------------------------------------------------------------
-    log.info("\n✅ Etapa 4/4 — Concluído!")
-    log.info("   SVGs gerados: %s", ", ".join(generated) if generated else "nenhum")
-    log.info("   Histórico   : %d entradas (1v1) | %d entradas (2v2) | %d entradas (3v3)",
+    log.info("\nStep 4/4 - Done!")
+    log.info("   Generated SVGs: %s", ", ".join(generated) if generated else "none")
+    log.info("   History       : %d entries (1v1) | %d entries (2v2) | %d entries (3v3)",
              len(history["modes"]["1v1"]),
              len(history["modes"]["2v2"]),
              len(history["modes"]["3v3"]))
