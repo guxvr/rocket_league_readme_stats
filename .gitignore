@@ -17,3 +17,4 @@ test-results/
 # Temp / debug
 *.log
 *.png
+!sprites/*.png
