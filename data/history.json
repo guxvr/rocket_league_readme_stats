@@ -43,21 +43,57 @@
     ],
     "3v3": [
       {
-        "date": "2026-06-09",
-        "mmr": 931,
+        "date": "2026-05-20",
+        "mmr": 875,
+        "rank": "Diamond I",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-05-29",
+        "mmr": 906,
+        "rank": "Diamond I",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-05-30",
+        "mmr": 933,
         "rank": "Diamond II",
         "rank_tier": "diamond"
       },
       {
-        "date": "2026-06-10",
+        "date": "2026-06-05",
+        "mmr": 895,
+        "rank": "Diamond I",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-07",
+        "mmr": 896,
+        "rank": "Diamond I",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-08",
+        "mmr": 914,
+        "rank": "Diamond I",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-09",
         "mmr": 919,
         "rank": "Diamond II",
         "rank_tier": "diamond"
       },
       {
-        "date": "2026-06-11",
+        "date": "2026-06-10",
         "mmr": 946,
         "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-11",
+        "mmr": 895,
+        "rank": "Diamond I",
         "rank_tier": "diamond"
       }
     ]
