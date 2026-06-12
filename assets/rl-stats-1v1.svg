@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jun 11, 2026</text>
+        text-anchor="end">Updated Jun 12, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEoUlEQVR4nO3dT2ibZQDH8e/zdlvTpn/WOE1RVwddde1BESYoePCsDLzl4sHrPHgSZHgSZEO9Ca4eVJieclOPnhQFEbyI0BZiXa0Tk3Vru3Vpsq3J4+FNuixL2+dNn6xv098HXt6WtU+fwvjl4ZfnfWqstYiISDwFez0BERHZmkJaRCTGFNIiIjGmkBYRiTGFtIhIjCmkRURiTCEtIhJjCmkRkRg71O43mmwhAMaAQWANWLSZdNXXxEREBEw7TxyabGESeB04BfQBJWAO+MZm0rM+JygicpBFDulaQL99drzvuXNTyYnRRDCSL1dXLswUc9Pzpd+BTxTUIiJ+RArpWsXx7tnxvjMXTw+9VLWWwBjq9zd/vZG7tFD+GfgUKABLNpO+3aG5i4h0vaghfQJ4f/HMsVef6AseCYwx9X+rWMsfqxs8//1y87fdAK5ucS01fb5sM+lK+7+OiEh3ifrG4SDQN5oIRhoDGqDHGJ4ZajnccO2acBi/arKFa2wd6s3XLZtJ6xg/EelaUUN6DSjly9WV5pV01Vr+LlZKwL/An0AvkAJGavcBh/ED4LHa5aJssgXXQF+ymfQdx3FFRGIhakgvAnMXZooTF08PHataawNjTP3+8VwxB/wEfAU0r3APEwZ2PbSbP26+H3GYT4JwG+CYy+RNtrDKzpVLY/WiLYUisqd2u7vj5GgiSF1Zr9z8YKb4z5eXyzkgCyx4mFsSOMqD4d0q0I/i/8GcChCleimqehER33zskx4mXCVfBn7ET0BHFQBDuK3QU4QvAL6VcA/0a6peRMRFWyEN9z1xOEa4ks3zYMURV0dovUpvDPn65ynCFyHfVnCrXa4CK6peRA6mtkN6c4Bs4VHghJfZxFcStxV6vXoxLUdpX4XtQ/y+y2bSRc8/X0T2iELav4CwAnIJ9BE6U72sE616uduBOYiIBwrpvdfLveqlft8u2DtRvSyzc+XSWL3sl1pLZN9TSO8/SdxW6CnCFb3v6mWDaNXLuuefL7Iv+DopVCHd3XrYunpp9UZpJ6qXItGql40OzEHkofJ5UqhCWho1Vi87BXuKXZxHvo169eJyrap6kbjxfVKoQlp2YwC3h43q1Ytvd2ldvRTZP9tBpfu8/MZTiYmvXxw+3nBSqA2MMW/9dvOX6fnSd8BHrtVHJ1ZCcnDcql2LDl/bQ7hKb96HvlWw9zuMeRh4vHaJxMY7p/o3j3AGqB+fcW4qeXJ6vjRJ2FUvuIylkJaHpQJcr10uenE/5yVF+CIgEgtPDx7aDOi6wBgzmghShGcODbqOpZCWuLpN+BRr3vHrB7kX2L2dmpTIDlLAa1fWK1PjAz0DjUFdtdbmy9VloEy428OJQlq6xVrtcqleRDrFAOkP54qJz18Yfrb5pNDzM8UcMEuE/6cKaRERfyzwwxd/ldMA700mjz/Z3zOUL1eXz88Uc5+Fuzu+jbJfWrs7RET8OwG8UrtbwvdiZgkDOtI+aa2kRUT8WwAuAaOEW0VnafOJQ4W0iEhnWOA/4LrNpBfaHcT3XzMRERGPFNIiIjGmkBYRiTGFtIhIjCmkRURiTCEtIhJjCmkRkRj7H47gCchc31l2AAAAAElFTkSuQmCC"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEBElEQVR4nO3dT0hkdQDA8e97epjRUdOEcdtt21qtXQ9FsEFBROdioZuXjl22Q6cgFuoQxC4FXTqsHdqgOnmr6NSp6BBElyjURVzNdReFcDe30Yl15nV4MzIO88/BmZ76/cAPRWfG38Uvz9/83s8giiIkSckU/t8TkCTVZ6QlKcGMtCQlmJGWpAQz0pKUYEZakhLMSEtSghlpSUqw3lYeFMysh8BpYAC4D6xEU9liJycmSYKg2R2Hwcz6eeA14ByQBraBeeDraCo71+kJStJx1jDSpUC/dels+pnLk/0TY6lweC1fvHt1Nrcwvbj9G/CJoZakzqkb6dISxzuXzqYvXrsw+EIxigiDgPLHN375+4/rS/nvgPeiqexOV2ctScdEo0ifAd5fuTj6ysl0+HAYBEH5e4Uo4vd7Ozz7/QbADrACLNcZd6KpbKFD85ekI63RG4cDQHosFQ5XBhqgJwh4anD3qb3AE6VRy04ws14Z8T/ZG/HbRlySamsU6fvA9lq+eLf6SroYRSz9U/gXuAfkgCzQ3+BnNIv4LepfiRtxScdWo0ivAPNXZ3MT1y4MjhajKAqDICh//PhG7gbwE/AlEAEZ4BHgRGlUf55pMIfHS6OWZhG/45q4pKNqP7s7xsdS4cjqVmHzg9ncrc+X8gvADHEoW5GhfsBPEC+vtGMHqIx4reUUIy7pUNrvPulhoAdYAn6k9UC3olMRL7A34tXDiEtKrKaRhj13HI4DfcAa8RJHN9WLeHkMtvm6RlxSYrUU6d0Hz6yfIg5iEvXT+Er8ICNeuaSyasQldcpRinQznYz4KvWvxI24pLYdp0g3UxnxWjEfavN1jbikthnp1vUDY9TfZniQEa9eTnnQ7qQlJct+TxU10genUxEv0vxK3IhLh0A7p4oa6e7pY2/Eq2NuxKUjrN1TRY10cnQr4qvENwBJ6q4XX38sNfHV80OPVpwqGoVBELz56+bP04vb3wIfVS99tPSfWdQVW8DN0qilXsTLX3uozvPK61+ngZcObrqS9uvtc327xz0DlI/auDzZPz69uH2e+Pd0ufI5RvrwaBbxNPV3pjSKuKQueXKgdzfQZWEQBGOpcARIUePOaiN9dGzTWsRHgaDOYyR1xgjw6upWYfJspidTGepiFEVr+eIGkCfe7bGHkT4+mkVcUucEQPbD+Vzqs+eGnq4+VfTKbG4BmCM+fXQPIy1JnRcBP1y/mc8CvDuZOXUyHQ6t5YsbV2ZzC5/Guzu+qbVf2t0dktQ9Z4CXid8nekD8F+4ccaBr7pP2SlqSumcZ+IL4VM+/gE2a3HFopCWpuyLgNrDQKM5lYefnI0lql5GWpAQz0pKUYEZakhLMSEtSghlpSUowIy1JCfYfDQDcvcPXA/0AAAAASUVORK5CYII="
       preserveAspectRatio="none"
     />
   </g>
@@ -231,7 +231,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">3</text>
+          fill="#FFFFFF" fill-opacity="0.8">4</text>
 
     <!-- Source badge (far right) -->
     <text x="479" y="0"
