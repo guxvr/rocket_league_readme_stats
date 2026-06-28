@@ -115,6 +115,12 @@
         "mmr": 729,
         "rank": "Platinum II",
         "rank_tier": "platinum"
+      },
+      {
+        "date": "2026-06-28",
+        "mmr": 712,
+        "rank": "Platinum II",
+        "rank_tier": "platinum"
       }
     ],
     "2v2": [
@@ -228,6 +234,12 @@
       },
       {
         "date": "2026-06-27",
+        "mmr": 981,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-28",
         "mmr": 981,
         "rank": "Diamond II",
         "rank_tier": "diamond"
@@ -375,6 +387,12 @@
       {
         "date": "2026-06-27",
         "mmr": 900,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-06-28",
+        "mmr": 933,
         "rank": "Diamond II",
         "rank_tier": "diamond"
       }

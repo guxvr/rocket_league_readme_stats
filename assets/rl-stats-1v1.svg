@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jun 27, 2026</text>
+        text-anchor="end">Updated Jun 28, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -171,7 +171,7 @@
         font-weight="800"
         fill="#00A8E8"
         text-anchor="end"
-        filter="url(#neon-glow)">729</text>
+        filter="url(#neon-glow)">712</text>
 
 
   <!-- ===== CHART AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAADXUlEQVR4nO3dT4gbZRzG8e87u+DW7BpcwVHoWqFW3JWqCIKHCuLFggh6CtKqFxHbgydBFg9S/yD16KWK9iAL0lykevEqiFZpEXvoWihb22rpBoTS1W1W3OT1MBk3ikI0s83AfD+QQ96E8Jwewi8zv4QYI5KkckpGHUCS9O8saUkqMUtakkrMkpakErOkJanELGlJKjFLWpJKzJKWpBIbD81WAtwGTAG/ABdiI+2ONpYkCWAceBm4C9gCtIHTodk6Ghvp9yNNJkki7Dt+5av5udqOWyaSG5fXupffWlw9c2ipfRJ4x6KWpNEKMcbYjZEkBLoxxiSEsP/EyrFDS+1PgbcdfUjS6CR5QQMkIYRujHF+rnYHMEs2q5YkjUiSF/SfByGE9LrkJrIZ9dRIUkmSgOyb9F92lXZiZHFlPQF2kRW1JGlEknzEAdCNkbEQOHBqFeBW4LPQbD050oSSVGHJ/hMrxy62uz//3o2d86udy898feXs0Yu/tXuvTwMfh2br/dBsTY4yqCRVUeDI8jzZddIp0AF+AL4F9gCP9L33DLAnNtLj1zylJFVU4Mhyfsfh/cA6sAzkc+rHgZfYmE2vA68CB2Mj7VzjrJJUOSH/3TA0WzuBiX94zwzwGnB339kXwNOxkZ7f9ISSVGGDLFj6EXgOOAzkN7Y8BJwMzdZTmxVMkjT4FrwO8B7wAnCpd1YHPgrN1kJotuqbEU6Sqm6Qccff1ciWMu3uOzsH7I2N9MuiA0pS1fRvJ/0/JZ3bTVbWtd7zLvAG8HpspOvFxZWk6gjN1izwBL3tpMOUNGQ3vBwA7us7+4bsUr2lYcNKUpX0CvrFfdu33JtvJx22pCGbaz8LPA+M9c5+Bd4Frg4fW5IqY9febRM7Fh6sz+TL74oo6dwc2bhjawFBJamSvnt0mp318Y3tpAV+9iLZXYqfFPiZklQpd05tFDRkf59VpDbwJrBANq+WJA1mGnjsp6udue2TY5N5URdd0rkLvYckaTABSA+eXp344IH6Pfk/ZW1WSUuS/psIfH747FoK8MpsbWbr9WM3FPnDoSRpeLcDDwPbgDW/SUtSuZwDPgRuBi4VeXWHJKkYkWxP0ilLWpJKzJKWpBKzpCWpxCxpSSoxS1qSSsySlqQSs6QlqcT+AF4G8Ew5+/c5AAAAAElFTkSuQmCC"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAD90lEQVR4nO3cT4iVVRjH8e9579ioM/bHRa+UigVWk4W1ydAIqYiWpcXd2d9F2qoWhVhtQisXLgoyiAoXgS/UFBIlBFFRKmpYQdkUppnlvItyHJkZx5m5p8U7t2zETJ2Z+8b9fjbDPXPP4Vn9ODz3nBNijEiSyilpdAGSpNMzpCWpxAxpSSqxlpDlCTAXmAEcAw7GalprbFmSJIAW4CngGmAaMAB8H7L8vVhN9za0MkkSYeWuo9tWX9s2f9bU5JLu47Ujz3/X9+PGfQNfAy8Z1JLUWCHGGGsxkoRALcaYhBBW7e7dvnHfwBZgva0PSWqcpB7QAEkIoRYjT3a0XQ10UPSqJUkNktQD+q+BEEinJjOB24BFDalKkgQUO+l/XDkciZGu3mGA2cDmkOVbQ5bf2pDqJKnJ1XvScbTVEZMQwvIveoY6Dw1OGfPdz4F1wNZYTb1LLkmTIFm1u3f7of7a70O1OPJz30jPwzuPftN5aPB94DXgt5O+ewvwAfBlyPJ7Q5ZXGlKxJDWRwObu1RQ/EqbAMLAf+BQ4AFSAO4EHgCvGzO0CXgDeitV0aJLqlaSmEtjcnVAE8A3AENANjG1nBGApRVh3jPnfQWA98EaspgMTWKskNZ0QYyRkeQuwALjgP8xZBDwE3DhmPAc2AK/Gato7vmVKUnM6l5CuWwg8CCweM94D7OTU3bgkNYNfgHWxmu4fj8XOJ6TrrqJog9xO0RaRpGb3B3BfrKYfn+9C4xHSdXMpwvouioebJKmZjQBPAC+fz7Hl8QzpuhagdRzWkaT/m6nA08CSk8beBFbGajp4LgtOREhLUjNLgEcpOgt1O4BlsZoePpfFJEnjpwa8AqwB6rvnm4HdIctvOtvFDGlJmhgfAY9QHE8GuAz4LGT5irNZxJCWpInTBawA9ox+bgU2hSzfMNpmPiNDWpIm1hHgMeCdk8YeBz4MWT7zTJMNaUmaeMPAixTvHY2Mjt0B7ApZvuDfJhrSkjR5OoGVFLtrgCuBHSHL7z7dBENakibXVxR96q7Rz+3AuyHLnw1Zfkome05akhqjFXiG4jnouk7gfqCf4hb3DK9vS1JjDFLcTvyB4ofFACwDrgO2AJcC09xJS1LjLQbWAm0Ay2e3Dq9f2N43Z3ql3Z60JDXeNopr5D33XN7K20subpnXVrloShIqhrQklcMJYOdz17cP12IkCcXLz4a0JJXDdCCZP6MS6gENhrQklUU/cOLX/pFjtfj389OGtCSVQzdwYO3evoNJCNRikdQewZOkcojAJ6//dDwFWNPRNmf29MqFHsGTpHKZBywd/TvgTlqSyuUAsAmYBRy2Jy1J5ROBw8C3hrQklZghLUkl9ieFfDWrB9641gAAAABJRU5ErkJggg=="
       preserveAspectRatio="none"
     />
   </g>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -10</text>
+          fill="#F44336">↓ -27</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -231,7 +231,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">19</text>
+          fill="#FFFFFF" fill-opacity="0.8">20</text>
 
     <!-- Source badge (far right) -->
     <text x="479" y="0"
