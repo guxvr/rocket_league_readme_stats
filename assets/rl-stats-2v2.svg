@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jul 06, 2026</text>
+        text-anchor="end">Updated Jul 07, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAADdElEQVR4nO3dTWgdVRiH8eeMQROT2jZYb60agh+FFOyqXQoiuBEqdCFZKG7cqEg3ohIo1G/BlYgY60ehuw5UqIoUXEhBoQtFKBYjlWgIlGRo0KANN4VmjouZytxiPm64NxPo84OB997Vf/VymHnPOSHGiCRpc0rqDiBJWp5NWpI2sZ6QZsPAFuAfYDqONvJ6I0mSrgmcmD0O9AFN4FfgVBxtTNQbS5IEEKYXrl7a2Ztsn13M/3rnl4Xfxieb54D3bdSSVL+wlOd5EkLIY4xJCOH5H/8+Oz7Z/BJ411cfklSvJAkhAFxr1GN7+u8HRoCheqNJklqmO5IQws7eZBDopfiYKEmqUUuTzmNkdjH/E1ikmPaQJNUoycsth0sxkoTAq+cvzwATwHS90SRJycVmPndlKeY/z1/l4PfzHPtjcTvwhR8NJal+PUNfzZ0GBoFHgFuBe4AdFKtpSVKNEuAI8B7wceX/N0OahVoSSZL+k8TRxhTFTsMTwFT5/0PAozVlkiSVqtMdOXC08vstV9OSVK/rT8H7FrhQ1vuAxzc2jiSp6vomHWldTb8R0szjTCWpJv/XgL8Dzpf1g8ATGxdHklS13Cp5vFK/HtKsZyPCSJJaLdekfwB+KuvdwFMbE0eSVLXS++bqavpISLObux1GktRqpSZ9Djhb1sPAM11PI0lqsdrkxkeV+nBIs75uhpEktVqtSU8AZ8p6F/BsV9NIklqsZQb6KMX8NMBYSLOBLuaRJFWspUlPAt+U9Q7gUPfiSJKq1rqb8BNgqaxfCmm2rTtxJElVa23S08DXZb0NeLEraSRJLUKMkZBmd1F8GFzJncDnQA9wGbg3jjYudTugJN2IynOThto5PGkGOFXWA8DLnQ4lSYKQZiPAK8Br7Z5wdwy4UtYvhDRbbfUtSWpD2aAPPXdf34HpA7c/1u7BSXPASeBJoBc4HdJsqsMZJelG9sDo0C2ND/fdNpjHyHpOtzsOHKS4tHZv+UiSOmRspJ88RpIQ1jzdUTUPfEBx3ZYkqcN2b+khCcXthes9J/okxUheb6dCSZJoAE/PNJf2D/fftDUJYd1NGqBZPpKkzpgHLrw9sXDHp/u37s1jjN64IkmbRwTOfPb7YgPg8J6Bu9vZzCJJ2hjDwMPALlfSkrT5TFFM0g2sZ7pDktR9Ebhok5akTexfdgjYLc8wcfsAAAAASUVORK5CYII="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAADPklEQVR4nO3dMWicZRzH8e/zerUJMaSW4luwxqBtMR3cOrgJbkJFB7mtoNVBB1eNCIKDQqGLS5c6FLXmFMHWQdwcBBcXEY0oLXoQzGGxSeS8VJL3cbi3+iY0zSXc3RPI9zM9BA5+048///fJ+4YYI5Kk3SlLHUCStDlLWpJ2sVpotKaAceAvoBnreZE2kiTplsDswkVgFOgAPwGfxXo+lzaWJAkgNNurfxweye5dWCluvPNj+5fzVzvfAe9a1JKUXlgriiILIRQxxiyE8PK3y9+cv9q5Apx19SFJaWVZCAHgVlHPnBg7CkwDk2mjSZLW3e7IQgiHR7KDwAjdh4mSpITWlXQRIwsrxZ/ACt3bHpKkhLKi/JfDtRjJQuCtH9pNYA5opo0mScrmO8X1m2sxfr+4yjNfL3LhWmcUuOxDQ0lKrzb5+fUvgBx4AqgBx+nemZYkJZYBbwLngE/Lv9WAmWSJJEn/CTFGQqM1CRwDLgNjwCpwNNbz35Kmk6Q9rnq7YxmYLc814PXhx5EkVW18C95HQLs8PxcarQeHnEeSVLGxpKvT9D7cTUtSUrd7n3R1mn6+3FdLkhK4XUkvA43y7DQtSQlt9mWW6jR9xmlaktLYrKSXgI/L8z7gteHEkSRV3ekbh5eAv8vzC6HRemAIeSRJFXcq6SXcTUtSUlt9Lbw6TZ9xmpak4dqqpKu76btxNy1JQ7VVSQN8yPrd9JEB5pEkVfRS0kvAJ+XZaVqShqiXkgb4gP/fMf2i07QkDUevJb1xN/3qYOJIkgBCo5WFRmuq+j7pfIvfTABXgFHgH+ChWM/nBx1Ukvaa0GhNA08Dj/Q6SYPTtCQNXFnQr7z08Oip5qlDT25nkgY4QHeaHgFuAl8OLqok7UnH6pP789nHDhwsYqS2zR8v0p2mTwP7gaf6nU6S9rqZ6TGKGMlC6PnBYdX7QLPfoSRJXcfHa2QhAGx7kobubvpZuqsPSVL/5MDp3ztrJ6fG7prIQthRSQNE4EYfg0mSuivln9+ea9934eTEo0WMcaclLUnqvwh89d61lRzgjRP3HNnu7Q5J0uBNAY8D9ztJS9Lu8ytwERjfye0OSdLgRWDekpakXexfE6je/RGMO0IAAAAASUVORK5CYII="
       preserveAspectRatio="none"
     />
   </g>
@@ -231,7 +231,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">28</text>
+          fill="#FFFFFF" fill-opacity="0.8">29</text>
 
     <!-- Source badge (far right) -->
     <text x="479" y="0"
