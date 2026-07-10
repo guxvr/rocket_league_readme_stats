@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jul 09, 2026</text>
+        text-anchor="end">Updated Jul 10, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEDUlEQVR4nO3dTYhVZRzH8e9zpnIcDUqjM6AjQwqhIBQURS6MwKSgRVDcWuXKhRBZ4iLaFFjSi4teRAyMJMo5KWEtgmqRBmJCECWoIL4wKsw1MF+4M6POPU+Lc8duk44TNPfc0e9n9Zxz/w/8Vz/Oec65zwn0DfQCtwMXgP5YSXMkSW0h0DewFZgODAGHgJ2xkh4sty1JEkDor4380d2Z3DkwnP+5/kDt8KYjQ78BHxjUklS+UM/zmIRAHiNJCKz65fzeTUeGvgHecelDksqVJCEUgxCox8iqBV0PAs8AD5famSSJEGOMzSeG6pGuHadHD/cAfcCOWEkHWt2cJN3s/hHS9RjZf3aE+78/M7YuB36kCOyvYiX9V4Ek6f8X6nmeJyGEPMaYhBBW7Dt3aOvx4bPA3cA9V5kzAvwMDLeyUWkK+x14O1bS09etlMYI/bWR092dyayTg/Xz6w7UTnxybPgwkAHHKUL6cWA5MKfEPqWp7hzwOrAxVtLLJfeiKWT0Pem7GsfHgN0UAT3WQorAXkZxlS3pvzsIvBQr6Q9lN6KpITT+cbgQuBUYAOK4Mwpdk9mUdAOZCawEngJC0/mdwJpYSY+W0ZSmjhBjJGTV+cCsspuRbmCLgDXA4qZzF4H3gPWxktZK6Uptz5CWWicATwAvArObzp8E1gJZrKQTuZPVTSQpuwHpJhKBbyn+LPYZxZtSAHOBbcDukFXvK6c1tSuvpKXyzANeBpY0ncspHt5fKqUjTbYc+DpW0s0TnWBIS+VbArwC9JTdiFpmaaykP02k0OUOqXx7gOeADyn2ddeNb0PIqhPK31smuxNJE3KZYp36C6Cz5F40ORJgM7AAeAB4Hvj8epNc7pCk1nmI4o4J4ARwb6ykQ+NNcLlDklpnH7C3Me4BVl9vgiEtSa31PsVbHgCvhqw67jYbhrQktdZRim0BoPgI+BvjFRvSktR6HwODjfHKkFUXXavQkJak1jsDfNoYJ8C71yo0pCWpHNuAamP8ZMiqy65WZEhLUjkuAhubjjeErNoxtsiQlqTyfAccaIwXAyvGFhjSklSeSPFK3qh1IavObC4wpCWpXL8Cuxrjboq9xa8wpCWpfB8B9cZ4bciqVz78bUhLUvn6ge2N8XRg3egPhrQktYct/L1V7QujX+kxpCWpPZyjCGoovoe5IWTVXkNaktrHduBUY/wYsMWQlqT2cRnoA3h6zjT2L5+91C+zSFL7CMD0Z3um1b585I4ZeYwdXklLUvvoBnrfWjwzz2MkCcEHh5LURrqA2+bN6OhKQgB8u0OS2skgcOnUYP1CHiNgSEtSOxkAjr95sNafhEAeY/TBoSS1jwjs2nJ0OAV4beGMnhBjJGTV+cCscnuTJDX0Ao8Cc/8Cc8MjfING7DoAAAAASUVORK5CYII="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEOklEQVR4nO3dXYhUZRzH8e8zGq4vm2XSWGStSYJCRpRIIhXdFIFFSa03EUZdRCW9WZIWBEkEddNFJpghVuwpCynqwi4yevHWCKyw1FbBnRVz08Zd0ZmnizPiCOXLzDk70/T9wMLzHM78z/9i9zfPnjlzTqBvoAfoBo4A/bG3WEWS1BYCfQMbgPHAMPAzsDn2Fn9qbVuSJIDQXz5xYFpX4eKBkeqhV3eUd675bfgH4E2DWpJaL1Sq1VgIgWqMFELgvu+GhjftO1YGDrW6OalNbQdWxN7irlY3os4XYozx5KQSIz8OneD6LX+0sifpv6AMPAe87ec4ytNpIQ0wUomM3zR4HBgB/OWTTtcFjKubfwU8FHuLe1rTjjrdaSFdjTHuKVeGZn5+cBuwFtjfutaktjQBeAJYXLftL2A5sDb2FuM/vkpqUKFaC+lqjLEQQli9o7wX2A0MtLY1qS0dBV4DHuPU38gkYA2wJSSlq1rVmDpT6C+fGJzWVZiy72jl8Cs7ynvX7x7ZCSTAnhb3JrW7icAy4J66bUeAZ4B1rqqVhZPXSU+tzXcDX2NAS+djPrAKKNZt2wI8HHuLe1vTkjpFqH3jcDZwAem/b777S+dvIvAkcHfdtsPA08B6V9VqVIgxEpLSTGBKq5uROsBNwErg0rptu0jPZavzVIFPgZfyeiMem0dR6X9sG7AEeApYVNt2deva0SiYC3xDeoorc66kpfwsIL1c7/JWN6JcFDh1zfy3wM15rKZdSUv5+b72o85UAPqAHmAhcAuwNY+DSJLOXxVYXzd/MY+DGNKS1LgvgX218W0hKS3I+gCGtCQ1rgK8WzfPfDVtSEtSc77g1H2O7ghJaV6WxQ1pSWpOBdhQN1+VZXFDWpKa9xkwWBvfFZLSdVkVNqQlqXnHgY1188xW04a0JGVjM3CwNl4cktKcLIoa0pKUjWPAe7VxIL2HS9MMaUnKzifAn7XxkpCUrmm2oCEtSdkZBt6vjQvAC80WNKQlKVsfkT6hB+CBkJRmNFPMkJakbJVJb7wEMAZY0UwxQ1qSstdHGtYAS0NSmt5oIUNakrJ3hPS0B6SPJlzeaCFDWpLy8QEwUhs/EpLStEaKGNKSlI8h4OPauAt4tpEiPj5LkvJzCek3EceRPoy4J/YWD5zLC0NSKgBXupKWpPwcJA1pgAmkDyg+q5CUZgPPAy8b0pKUr42kN2ACeDwkpTOetagF9LJHZ45f1L9o6p0+iFaS8jVIeivTe4FuYHVISpv/Zd8A3L90Rtf8t268cE41Rs9JS9IouIz0vh5jzmXn7bdP4drJYymE4NUdkjQK9pOups/JrO40oAE83SFJo+MN4FfgojPsMwm44fdyZfqs7jFdhRAMaUkaJceAD8+yTwAefP2X8sJ18ybPrcYYDWlJah8R2PrOrpEiwMrZE6f7waEktZ8e4Fbgir8BxG4t7nD1qLEAAAAASUVORK5CYII="
       preserveAspectRatio="none"
     />
   </g>
@@ -201,7 +201,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">739</text>
+          fill="#FFFFFF" fill-opacity="0.8">729</text>
 
     <!-- Separator -->
     <circle cx="95" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -79</text>
+          fill="#F44336">↓ -69</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>

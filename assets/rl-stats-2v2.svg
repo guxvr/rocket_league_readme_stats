@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jul 09, 2026</text>
+        text-anchor="end">Updated Jul 10, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAADXUlEQVR4nO3dT2gcZRzG8e87jZgQSmMo3R40rLQKEfVW0ELBc7CCp+hBL3pRVEShpXgogn/Ao5ci6qGK0sGDrQqCXgSLXjwoxUarqyWg7mDRVAm7h2ReDzMps7FJk5KdyeH7Of1mSOA5PbzsvO9MiDEiSdqekqYDSJLWZklL0jY2EtKsDewE/gXm42wrbzaSJGlF4FT3JDAG9IAfgNNxtjXXbCxJEkCYX1z6c+9oclO3n//96vnFn050et8Br1vUktS8sJznMQmBPMaYhBCe/Oafr090eh8Br/nThyQ1K0lCKIYQQh5jPHbH+H5gGphqNJkkaXB3RxJC2DuaTAKjFA8TJUkNGijpPEa6/fwvoE+x20OS1KAkL48cLsdIEgIvn1/sAHPAfLPRJEnJb738Un85xnMLSzx4doE3Or0ecMaHhpLUvJGpjy99CuwHDpb32sCPjSWSJF2RAMeBl4Dvy3u3Ag80lkiSdEUSZ1sXgQvAm5X7R0OahWYiSZJWVHd3fAX8XM73AIfqjyNJqlr9Frx3KvPROoNIkv5vdUl/DnTLeSak2V0155EkVawu6WXgvcr1kRqzSJJWudpL/88Al8v54fJ905KkBlytpPtAWs47gOfqiyNJqlrr81kfUJQ1wOMhzXbXlEeSVLFWSV8GTpfzGPBULWkkSQPW+xDt+xQPEgGeDmk2XkMeSVLFeiXdBT4r50ngseHHkSRVrVfSMHi45fmQZjcMM4wkadC1SroDnC3nKeCh4caRJFVdq6RhcDV9xBcvSVJ9NlLS3wLnyvlOYGZoaSRJAzZS0gAnK7MvXpKkIQtploQ0a2+0pL8Efi3nQyHNDq73x5Kk6xfSbJpiQfziRks6Au9Wrl1NS9IQlAX9zBP7xg7PH949E2KMhDTbR7EXej0jFKcQ95TXnwB+rFaSttZts1M3tk7dOzGZx8jIJv5xieIU4rPl9f1bHk2SxLHpcfIYSULY8IPDFR/il8Qlaahu3zlCEordzptZSQP0gEeACcD90pK0tVrAo3/0lg+0x3fsSkLYdEmvWNjCUJKkwgJw4ZW5xT1vHdh1dx5jvN6SliRtvQh88fYv/RbAC9Pjt2xmd4ckqR5t4D7gZlfSkrT9XKQ46T2x2d0dkqR6ROB3S1qStrH/AJsz0VAtyBOrAAAAAElFTkSuQmCC"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAACQUlEQVR4nO3dMWgTURyA8e9dg6TWttglRVACtWAV7GJBwcHNSXDr6FwHVxFXQXCzg11U0KnZxM1NcXBxUbRKa61UCgmKYmuTIMk9h6ZiEZ0kedDvBzcdHP/p4/HnuAsxRiRJacp6PYAk6e+MtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsIKoVIrA4PABrAap0t5b0eSJIVKLQMOBear94B+oAG8BR7E6dKbnk4nSbtYqNQmgPPAkbC62fo0Wsz2V5v51+sLm0tzy40XwKyhlqTu6wT60sxY/+SVowPjoZ3neRZCyGOMWQjh4vP1Z3PLjYfADVcfktQ9nRXH5Zmx/nO3TgydymOMIf72k8N2jLz+1sonH31pAutAu2fTStLu0wcMvTw7Ujw2XMiyECjsuBsC44OFDNjbuSRJXXZ4sEAWAsDOSLdjZHGjlQM/gO+A6w5J6p4M2Pduo7Xn10l6exedxxj7Qgizi/VXwFPgPhD//TxJ0n8UgAs3l+qnb08NH89jjIW1Rv65VMxG1urt9WsLmx/vrjSXgCcYaEnqtgg8vvO+WQK4OjFwcPs96QNsrThW2Ar0h56NKEkqA2eAcmC+WgZOAnWgiidoSUpBAEZDjJFQqU31ehpJ0p/8wJIkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCfgI5T5roH5qscAAAAABJRU5ErkJggg=="
       preserveAspectRatio="none"
     />
   </g>
@@ -201,7 +201,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">1012</text>
+          fill="#FFFFFF" fill-opacity="0.8">981</text>
 
     <!-- Separator -->
     <circle cx="95" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -31</text>
+          fill="#8899AA">→ 0</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
