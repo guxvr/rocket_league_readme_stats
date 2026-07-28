@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Jul 27, 2026</text>
+        text-anchor="end">Updated Jul 28, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -171,7 +171,7 @@
         font-weight="800"
         fill="#00A8E8"
         text-anchor="end"
-        filter="url(#neon-glow)">723</text>
+        filter="url(#neon-glow)">734</text>
 
 
   <!-- ===== CHART AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAFRUlEQVR4nO3df2hVZRzH8fdznbk53dTEa6A2NMPZj2VoJPRH/WUIQkh4JSUJA5uVGZWZWiEERn8USOQ/ZklBnj/6gVT+SJLyD/vDIDOXJZsyLXYsKs05q+0+/XGe2z3aNu9+3D3Xez4vuOx7trPxYWzf+/A855zHsKOtDhgN/Am02kw6i4iIlATDjrbtQBXQARwDPrKZ9Pd+Y4mICIBpbe/8ZWJlamzbxezvm5raj29p7jgMbFajFhHxxwRhCphiurJZmzKGrLWkjGHloXMHtzR37ARe0dSHiMjQM0FYD9wHzEiljAEg16jX1ldPB+qBKf4iiogkk2vQqxqnVS1oXTB+fkX8iyljmFCZGg9cT7SYKCJSMtwUwDDfOYrIAAsbp1U1vDG7Zm7WWmustTb31S5rOfJHJ7P2/gbwLtBoM+nzvtKKiOSYIJwL7ATG+85SbN/MG8cttRWkjCGVdU06ay3DjGHj0fbceUuBIyYI7/GWVEQkbxMJaNAAN46OGjREV3ecmViZGnf6Qte5l5raT207cTFLNCc9IvY9rwNrbSbd3s3PExEpKhOEM4DcFWdngRaPcYrpGuC6I/deWzOzZlhFypj/rpPOvTudAL4A/gFeAGbFvrkFeMhm0l8OaWQRSTwThK8CT7rD14D3PMYpJgMsWz618q6tc2pvzVprjbvjsB4YDrQBNnbyIuAxLh1VbwbWaVQtIkPBBGEl8BMwDvgbmA+c8xqquOqAzPKpldPX11dPNtZaTBBOI/oFdGcS0aj6ttjnzriXlKdjwMM2kz7rO4iICcKlwDvucBfwosc4Q6UOuBuYVNH7eQCcBlYAGeBRolH1BPeS8nQz0dTXGt9BRIBHYvUH3lIMrZPAdmBMISPpuMnA00AD0XSIlJ8q97EdqLOZ9K8+w0iymSC8CfjOHbYAiz3G8aGjkJF03CngiWIkkZKxBrgfqAZWAxu8ppGkWxGrP/SWwqOU7wBScrYDna5+3AThGI9ZJMFMEI4EHnSHfwGfeozjjZq0XC4EPnZ1DbDKYxZJtkVAras/I3rmfeKoSUt33ga6XL3aBGGNxyySXPGpjqQsGP6PmrR052dgt6vHAis9ZpEEMkHYANzpDo+TXzxMHDVp6clb5G9sesoEYbXPMJI4iV8wzFGTlp60Es0DQvTYgBW9nCsyaEwQjiJ6wBvARaIbWBJLTVp6sy1WP2OCsKrHM0UGz2Lyz7PfQ3TNfmKpSUtvWoD9rp4ILPeYRZJDUx0xatJyJW/G6mdNEI7o8UyRATJBeDsw2x3+ADR5jFMS1KTlSn4EDrh6ErDMYxYpf/FR9PveUpQQNWkpRHw0/ZwJwuHekkjZMkE4GnjAHV4A9nqMUzLUpKUQTcBXrq4DlviLImVsCTDK1buJGnXiqUlLoeKj6XUmCMt5x2YZYiYIDbrDsFtq0lKow8DXrp5O9HxxkcEyh/zGIkeJ1kIENWnpm/hoer0JQv39yGDRZXc90D+Z9MUh4FtXzwQWeswiZcIEYS35h/mfRwuGl1CTlr6Kj6Y3uLlEkYFYCox09S6iW8HFUZOWvjpI/gaDBmCBxyxylXNv8kncw7BgatLSH/HR9PMaTcsAzCXa+BiiqbRmj1lKkpq09McB8qvvs4F5HrPI1U0LhlfQ141oRXK2AS+7eqMJQtvbySLdGE60RRZEW2Pt85ilZKlJS3/tJ3pK3lTgDvI7uYj0xydEm83KZTTdIf1lga2+Q0hZ6EQLhj3SSFoGYh+QBW7wHUSuWpbo+vuTnnOULDVpGajP3UtEikDTHSIiJUxNWkSkhP0LyYo5WwccIe4AAAAASUVORK5CYII="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAFMklEQVR4nO3dW4hVVRzH8e86juY0eAvxdHOyzCuWlSndKYheDJEgDkRUYCmKGNGD2BXDDHqQ6EEJRsOCml1m0s200iIwKCNN0CnTMSubnffLdEznnNXDWtOcsciYmWadvffvAwP/xZmHHzPDnzVrr7W2sdYiIiLVxURxDqivCR1EREQ6M1E8DpgOjFWTFhGpIr5Bz5s9snbigvF1o9SkRUSqhF/imD5rZO2kpdcOnFy2FjVpEZEqYKLYAAVg5uzLa0eUrSVnjJq0iEhIJoqHAvcDM4HRAKMH1JAzBkBNWkSkt/lZ803ALOBuoF/l5zuPt9kJg2pMzhiMtuCJSCi+WeVC5+hFg4B7cc15/D98vhk4OOPS/hc2TBl0Rdlaq5m0iARhongK8A6QD50lsKPAe8DbwF5gxPLmkwUM9vFxdcMNjS0jgAHAcWCvLeTL4bKKSFaYKN4I3Bo6R0BbgNXABuDUGZ+NwP1sLjY0tqwEaoEi0ASssYX8jl6LKSKZY6L4SmCrHx4D9oRL06sssANYA+w+y/caYLDZ29q2//z+uSEtJ8uHn9veunPZruJW4EU1ahH5v5gobgBm+OHzwKqAcapZ0ZTK5XLOGNO+J++hr45tadhd/BRYjuv6knw/20L+aOgQIvDXlrOfgP7ACWAq7j95+buisRXbO0rWsu1IG1evPxQylPS8InCLLeQ3hw4iYqL4MeBZP3wNeCFcmqpX7LT1pY8xjBmoDR8pVAss8dudRIIxUdwXmOOHFngjYJxE6NSRy9ay+0TpFBDjHiL+HiSV9KTrcFucbgbuANaFjSMZdxdwka8/B/YFzJIINWVrrV+TtjljzJLvWptwP7xX0Jp0GtwOLPb1YhPF620hr9+rhPJwRd0YLEWC5H4plg+cLtvSj62lIzO+PPrtiuaTO4HPUINOi0+A7319DW4mI9LrTBRPBq73w12403VyFjX17x5YCwz142Zcg94TLJH0NAsspePhzCITxWtsIV8KF0kyal5FHQVLkTA1wNPAOKAv0IJm0Gm0CXdwYCIwFnd3wMqgiSRTTBRfgLuGE9wx6LUB4yRKzhbye3D/Dv+KGnSaLa2oF5ooPidYEsmiWbiJILjTdn+Ei5IsWbp9Kuu+Ab7w9SXAgwGzSIb4CcFsPywBbwaMkzhq0tmyrKJ+0kRxXbAkkiUFYJivNwK/BcySOGrS2dKEu3EL3N7puQGzSAb4A1R6YNgNatLZ8xLQfh3tfBPFgwNmkfS7AZjk6yY6br6T/0hNOnuagQ98PQR4NGAWST8dXukmNelsagDafP2IieJh//bNIl1hong4HYenDgEfBYyTWGrS2bQP96oegDpgQcAskl5zgD6+Xg2cDpglsdSks2sFHXtV55gorg8ZRtLFRPG5wEw/bAPeChgn0dSks+sgHWuE/YCnAmaR9LkHOM/XH+P+3qQL1KSz7VXcmzEAHjBRPCZkGEkHv+1ODwx7iJp0th3DNWpwa4cLA2aR9LgNmODrbcD2gFkST01aGoHDvi6YKL4qYBZJh8rDK5pFd5OatBSBlyvGi0IFkeQzUXwZMM0P99NxwlW6SE1awG2Pin091UTxjSHDSKLNBdrfpbkKd6GSdIOx1mKieCQdT2Ilm6YBT/h6E/BMwCySTDnc8sZA4BRwJ3AkZKAUKOrV4NLufeA+oB5338KHYeNIwq1DDbpHaLlD2pXo/GIAka4qAa+HDpEWmklLpQ3AfGBU6CCSWBb4GvghdJC0UJOWM230XyJSBbTcISJSxdSkRUSq2J/0HFgfASbjDAAAAABJRU5ErkJggg=="
       preserveAspectRatio="none"
     />
   </g>
@@ -201,7 +201,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">729</text>
+          fill="#FFFFFF" fill-opacity="0.8">734</text>
 
     <!-- Separator -->
     <circle cx="95" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -6</text>
+          fill="#4CAF50">↑ +22</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
