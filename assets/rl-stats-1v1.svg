@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Sep 13, 2026</text>
+        text-anchor="end">Updated Sep 14, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAC6ElEQVR4nO3cT4iVVRzG8e/vzHXyaqNWRkKODSMjToFBVCsXLWofQeugoSD6sxcX0iJom0ERVFAU8W5qERa0sm3URiKCoLE/Ri+6KOs6U3rvafG+Ng6jqdD1PXC/H7hw77mbZ/Vw+L3nPZFzRpJUptR1AEnSlVnSklQwS1qSCmZJS1LBLGlJKpglLUkFs6QlqWCWtCQVrNd1AEnSRlHVCdhjSUtSYaKqF4FHgf2WtCQVpC3oF57Z27/30N1bF667pKOqp4HZ/z+aJE28AJ58ar7/4Gv3b7tvlHO+rpKOqr4LOA7MjSGcJAl4dqHPKGdSRFzz6Y6o6tuBz7CgJWms9s30SBHANZ7uiKqeAT4B9rVLvwAnxpJOkiZXH1hY/nO4c/+2qekUQVztPul2Bn0MeLhdOg0sAb+ONaokTZ4Anlia33zwzQe2H7jqTLo9p/cuawX9B/A8FrQkjUMGjr/1/eodAIcXt85ecScdVR3AUeC5dmm1/e6YQ5LGaw54CNj9Xzvpw6wV9BA4hAUtSTfCSeAdYMdld9JR1U8Db1yy9CLNXFqSdOOsbDiCF1X9GPD6JUuvYEFLUid6UdVzwAzNQ8F54APWbsd7D3i/m2iSpB7NKKPffh4Bptv/jgGvdpRLkgTEj4MLp3dtTrd8e/ZCHPl6kD469RfAVzQPDYfdxpOkibaS7uyn2zalmLpney99eHAHj8/eNAC+BEZdp5OkSZdSNC+IpwiGOfPygZvP09xyt6vbaJKkdac7piLYvWVqhmYuvaWbSJKki9aV9Cjn/PO54Vngb+BcN5EkSRelUfs2yyjnnCLipW8GPwHLeD+HJHUunVoZnTk/ysMfBsPflr74/cTby6vfAZ/TXPQhSepQb8/HZz4Fdra/l2kK+mRniSRJ/+oBR4BFYBPNiMMdtCQVInLORFXvBW7tOowkaZ2NFyxJksphSUtSwSxpSSqYJS1JBbOkJalglrQkFcySlqSCWdKSVLB/AMh3qs9D0Uc1AAAAAElFTkSuQmCC"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAACQUlEQVR4nO3dMWgTURyA8e9dg6TWttglRVACtWAV7GJBwcHNSXDr6FwHVxFXQXCzg11U0KnZxM1NcXBxUbRKa61UCgmKYmuTIMk9h6ZiEZ0kedDvBzcdHP/p4/HnuAsxRiRJacp6PYAk6e+MtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsIKoVIrA4PABrAap0t5b0eSJIVKLQMOBear94B+oAG8BR7E6dKbnk4nSbtYqNQmgPPAkbC62fo0Wsz2V5v51+sLm0tzy40XwKyhlqTu6wT60sxY/+SVowPjoZ3neRZCyGOMWQjh4vP1Z3PLjYfADVcfktQ9nRXH5Zmx/nO3TgydymOMIf72k8N2jLz+1sonH31pAutAu2fTStLu0wcMvTw7Ujw2XMiyECjsuBsC44OFDNjbuSRJXXZ4sEAWAsDOSLdjZHGjlQM/gO+A6w5J6p4M2Pduo7Xn10l6exedxxj7Qgizi/VXwFPgPhD//TxJ0n8UgAs3l+qnb08NH89jjIW1Rv65VMxG1urt9WsLmx/vrjSXgCcYaEnqtgg8vvO+WQK4OjFwcPs96QNsrThW2Ar0h56NKEkqA2eAcmC+WgZOAnWgiidoSUpBAEZDjJFQqU31ehpJ0p/8wJIkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCjLQkJcxIS1LCfgI5T5roH5qscAAAAABJRU5ErkJggg=="
       preserveAspectRatio="none"
     />
   </g>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#4CAF50">↑ +9</text>
+          fill="#8899AA">→ 0</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
