@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Oct 04, 2026</text>
+        text-anchor="end">Updated Oct 05, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -171,7 +171,7 @@
         font-weight="800"
         fill="#00A8E8"
         text-anchor="end"
-        filter="url(#neon-glow)">731</text>
+        filter="url(#neon-glow)">705</text>
 
 
   <!-- ===== CHART AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEQklEQVR4nO3dT2xURQDH8e9sS2htwNIYXiWlqRaF9oDxD3jwT9CYqDdvz8QDUQ8tF4hoNIaDGv+dJUEiQRLkwjOYeDMa/2CMfyJRgiZVU7FNK6VPSa1K2SLdHQ8ztRYFlazM9O3vc5o32Sa/y/52OvverLHWIiIicSqFDiAiIuemkhYRiZhKWkQkYippEZGIqaRFRCKmkhYRiZhKWkQkYippEZGIqaRFRCKmkhYRiVhj6AAiIZksbwCWhc5xlgmbJtXQISQORmd3SL0yWX4rsA/oDJ3lLEPABpsmI6GDSHgqaalLJstvAt4EWkJnOYfPgFtsmpRDB5GwVNJSd0yWrwfeBpb4qUFgPFyieXqAy/x4L3C/TRO9SeuY9qSlrpgsvw63gp4t6E+AR4DfgoWabxWwB2gCNgKHgB1BE0lQWklL3TBZvhZ4D2jzU4eArcDpYKH+3h3Ac348A9xu0+SDgHkkIN2CJ3XBZHkv8A5zBX0YeJj4ChrcVsw+P24EDpgs7wiYRwJSSUvhmSxfDbzL3F7vF8BDwHSwUP/sReBTP14OvGayvClgHglEJS2FZrK8G1fQiZ8aALYAp4KF+ncqwDZgzF+vB3aYLDfhIkkIKmkpLJPlXbiCXuGnvgE2A1OhMv1HPwOPMrcl8wDQFy6OhGDYP96F+6b7V2BETzpJEZgsXwm8D1zhp74FNuGKb6G5E3jaj88At9k0+TBgHrmIDPvH9wLNQBn4GnjdpslXYWOJXDiT5StwBb3KTw0D/cBEqEw1sAW4z4/Hgettmoyd5/VSEGZkaubH9qbSsvHp6k/PD0wN7jxaPgJsV1HLQmSyPAEOAmv81Chui+BEqEw10gBsB9b5649xK+oY706RGjBZXgI6TaVatSVjqFpLyRjSjyZPvjp6egI4HjqkyAXoBC7342O4gv4hXJyaagVeAdr99S6bJtqjLiCT5T3APcAaY//0NEvFWr6cnOHatxbyf4UigNsS6KN4i43VwG5gsb/us2myK2AeqTFf0Js3dTdf83hvy1XzShqgXLFccqAoCw+pU0eAJ3Er6SK6G3jKj8/gnlA8HC6O1JABtvZ3N9+184alN1attfPO7qhaa4+XK5O4/a6XKN4qRKQI3sAdxHQvsAj3JakUSP+q5tktaFOq+pV01VpbMsY8OzA1ijvPNpZTwUTkr14APg8dQv4fVy9ppGTcc0uNx8rVE+1NpbbvT1V+eWZganTP0PQg7pNZJy+JxKsCPIZ7OGd54CxSO4uBjqMnK629SxsaS8b8cZ/07JkGQ7iCHg6VUESkjhlg44NXNt28e92la2f3pJ/A7W8twm1xaAUtIhKGBQ6+/N10ArCtp2WlsdbOHkLTdv6/FRGRi6QL2AB06JdZRETiM4z7+bRWnYInIhInC4yppEVEIqaSFhGJmEpaRCRiKmkRkYippEVEIqaSFhGJmEpaRCRivwNGUSNzmyaP4wAAAABJRU5ErkJggg=="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAEi0lEQVR4nO3dTWgcZRzH8e8zfUlMlJpYnaBtiZhKC1ap2ENFRPTgRUEFmVqwIhJ68KJerBXEt1Jfi6/EogYjaDPowSqCeLGiUl8OklRatbaJqdVMalvbsMlas/N4eLJmG7NN1GSf2fj7wMLOzjPwOyz/ffZ5nnnGWGsREZFsCnwHEBGR8lSkRUQyTEVaRCTDVKRFRDJsru8AItPJxMnFwPm+c4zTbaOwx3cIqU5GqztkNjBxsgx4ErjOd5YJpMBjwMM2Cn/3HUaqi4q0VDUTJ2cDDwLrgTl+00yqG1hno7DLdxCpHirSUpVMnNQCdwEbgTNKTg0A24ETHmJNpBG4mbGhxT9wPypP2Cgc8RVKqoehs78Z9yUfBPpsFKZ+I4mUZ+IkANYAm4ElJaeGgQ7gDSBrQwpLgYeAlpLPvgBus1H4nZ9IUi0Mnf0dwGm4L/m3wDs2Cvf4jSXydyZOrgC2AKtKPk6Bd4GtwGEfuaZoHtAKrGNsVdUwsAF4QZ0jKcf05UYONdUGDf359Ojm3bm9bfuGu4DnVKglK0yctACPAzeNO7UTeBbYX/FQ/95FuOGO0n8BHwG32yj80UsiyTRTSFMbGENqLYExrN15bGBbX/4AsMt3OBGgHrgB1xMt2ocrzp/7CDQNaoA7ccM2RYPA3UC7jUJNFMlfjC2ZOSxYy67fRlj54RGfmUTK+RU3rPEebpij2l0GPAA0lXz2PnAfMOQlkcy0FDf3V5jqBScVaYDhgqXu7YFpTybyH+RxE4Kv48ZxZ5N64B7get9BpGK6gMttFE7ph/ikOw5Tazk4VDgOfA3EwKHpzyfyjyW4Qj0b5YBHgB245YRneU0jlXAJ7h/Uhqk0NoU0TQNjTGqtDYwxd3x5rLu9J/8JrteisTGRylkA3AKc6zuIzJhrcPMrI8BKG4XfTHaB6cuNDDTVBo0/DRWOP7o7d6C9J78X14vundmsIiL/O62jL4DPgCsnW35ZXCe9cPS4B/gYFWgRkZkwH3iTsSWYrTYKXznVBcU7DpfjuuD9aIhDRGQmrQJeHH1/FFhmo7Dsao3ARmEv8D3wCyrQIiIz7Svgg9H3DcBTp2qsTf9FRCrvGdwNTAC3mji5ulxDFWkRkco7Ajxfctxm4qRmooYq0iIifmxnbPuNC4F7J2qkIi0i4ofFbblbvEV8o4mTpeMbqUiLiPjzA25JHriNt9pMnJjSBirSIiJ+vYxbXQfujsS1pSdVpEVE/MrjHqJctMXESUPxQEVaRMS/T3EPfwA4BzdWDahIi4hkxdOM7SO+3sTJalCRFhHJigHgpZLjrSZOWlSkRUSy4y2g+AT5FUCnirSISHYUgNcAe+N5NXRd23jp3EkuEBGRyjHA4jVLag9vW71gYWqtUU9aRCQ7moDmTSvq56XWEhijiUMRkQypA+YvqptzemDcjYcq0iIi2TEEnDg4VBhMrdveX0VaRCQ7+oHeTXtyfYExpNZaTRyKiGSHBXa8uj8fAty/vH6xsdZi4uQCoNFvNhERGdUMXAUsUk9aRCR7eoEO4EyNSYuIZJMFfv4TdwU/0PNzDmkAAAAASUVORK5CYII="
       preserveAspectRatio="none"
     />
   </g>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -2</text>
+          fill="#F44336">↓ -28</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
