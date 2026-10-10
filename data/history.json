@@ -3,18 +3,6 @@
   "modes": {
     "1v1": [
       {
-        "date": "2026-09-08",
-        "mmr": 733,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-09",
-        "mmr": 733,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
         "date": "2026-09-10",
         "mmr": 733,
         "rank": "Platinum II",
@@ -184,6 +172,12 @@
       },
       {
         "date": "2026-10-08",
+        "mmr": 705,
+        "rank": "Platinum II",
+        "rank_tier": "platinum"
+      },
+      {
+        "date": "2026-10-10",
         "mmr": 705,
         "rank": "Platinum II",
         "rank_tier": "platinum"
@@ -191,18 +185,6 @@
     ],
     "2v2": [
       {
-        "date": "2026-09-08",
-        "mmr": 981,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-09",
-        "mmr": 981,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
         "date": "2026-09-10",
         "mmr": 981,
         "rank": "Diamond II",
@@ -375,21 +357,15 @@
         "mmr": 952,
         "rank": "Diamond II",
         "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-10-10",
+        "mmr": 952,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
       }
     ],
     "3v3": [
-      {
-        "date": "2026-09-08",
-        "mmr": 877,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-09",
-        "mmr": 877,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
       {
         "date": "2026-09-10",
         "mmr": 877,
@@ -561,6 +537,12 @@
       {
         "date": "2026-10-08",
         "mmr": 990,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-10-10",
+        "mmr": 970,
         "rank": "Diamond II",
         "rank_tier": "diamond"
       }
