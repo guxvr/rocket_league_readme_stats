@@ -11,7 +11,9 @@ on:
 jobs:
   update-stats:
     name: Fetch & Generate SVG Stats
-    runs-on: ubuntu-latest
+    # Pin the runner because ubuntu-latest can move to an unsupported release
+    # before the pinned Playwright version provides browser dependencies for it.
+    runs-on: ubuntu-24.04
 
     permissions:
       contents: write   # needed for git push
