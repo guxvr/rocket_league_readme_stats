@@ -217,9 +217,10 @@ def _scrape_layer2() -> dict:
             log.info("  Navigating to %s", page_url)
 
             try:
-                page.goto(page_url, wait_until="networkidle", timeout=35_000)
+                page.goto(page_url, wait_until="domcontentloaded", timeout=35_000)
+                page.wait_for_timeout(10_000)
             except Exception:
-                log.debug("  networkidle timeout - checking captured data...")
+                log.debug("  page load timeout - checking captured data...")
 
             browser.close()
 
@@ -257,7 +258,7 @@ def _scrape_layer3() -> dict:
             'url': PROFILE_URL,
             'render': 'false',
         }
-        resp = requests.get('http://api.scraperapi.com', params=payload, timeout=30)
+        resp = requests.get('https://api.scraperapi.com', params=payload, timeout=30)
         
         if resp.status_code == 200:
             data = resp.json()
