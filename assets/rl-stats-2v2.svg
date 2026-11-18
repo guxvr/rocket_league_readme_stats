@@ -126,7 +126,7 @@
         font-size="8"
         fill="#FFFFFF"
         fill-opacity="0.3"
-        text-anchor="end">Updated Oct 21, 2026</text>
+        text-anchor="end">Updated Nov 18, 2026</text>
 
 
   <!-- ===== MAIN CONTENT AREA ===== -->
@@ -181,7 +181,7 @@
     <image
       x="16" y="125"
       width="463" height="50"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAADzklEQVR4nO3dXYiUVRzH8e+ZncItXxKCqU1iSSuSlIQki5C6iyXBLmLoIiIkNKjoooiiiLLwpggCsaQMI8InCrrqRYjauiokKFML8SVR2gfLzFp3YZ05XcwztILVRTue0/j93Mz/geE5v6v/HP7Py4QYI5KkPNVSB5Ak/T2btCRlrB6KchiYA/wOHIrNRjttJElSV2Db2FZgEJgAvgfej83GnrSxJEkA4dD4qaOXzKrNH5ts/7ph9/jeTfsmvgFetlFLUnqh1W63ayGEdoyxFkJYu+PEjs37JrYDG4Fe3PpxNDYbp3pwXknqOyFOuwevFSM7j59i2fZjvVzzMHBjbDYO93IRSeoHp93dMRACV8+t93rNBcD6Xi8iSf3gtJ10O0Z2n2hNLfnol2PAAWByhtdbDlwItIGlsdnYNcPnl6S+Uu/OorufL/0wvgf4AniTmZ9J3w08SGcH/xxwxwyfX5L6Su3IRPvnqXZs/TjeOr7mq9++3XJgci8wSm8uGr4DHK3q1aEoV/RgDUnqG937pOcDA3RGHKPAwR6uuRp4oqpHgVtjs+ELRCTpDALbxoaBhXRmxWP0Zgc93QBQAJdXx7fFZuPjHq8pSf9LtdhsHKTzpOFP9L5BA7SAV6YdbwhF6TtEJOkMUjXHT+j8MAAsA+5MlEOSspaqSUc6TzR2rQ9FeV6iLJKUrZRjhi+BHVV9JXBvwiySlKXUs+Dpu+mnQ1FekCyJJGUodZPeBXxa1UPAAwmzSFJ2Ujdp6Nzp0f2jgcdDUc5PGUaScpJDkz4AfFDVFwGPposiSXnJoUkDbAamqvrhUJSXpgwjSbnIpUmPAe9W9SDwVMIskpSNXJo0wBvAyaq+LxTlopRhJCkHOTXp48BbVV0Hnk0XRZLykFOTBnibTrMGuCsU5XXpokhSerk16ZPAlmnHz6cKIkk5yK1JA7xH50IiwEgoypUpw0hSCqEoa6Eoh3Ns0lPAq9OON4SiDKnCSNLZForyGuAx4JkcmzTAh8D+qr4JuD1hFkk6a6oG/dD9CwdXHVp18UiIMRKK8jI6787IyUrghar+DriBvx4fl6R+FIBH1i0cHNl0/dwV7RhjPXWif/A5sBNYAlwLjKeNI0lnx7pFg7RjpBZCyHXc0bXx378iSf3lqjl1aqFzKS7nnTTA18CLdEYfuf+gSNJ/dT4wtO+P1rzFcwfqtRDIeSYtSeeaANyz5opZN7+2fN7S3GfSknSuicBnr++fbAA8uXj2AnfSkpSfYeAWYMidtCTl5yCwFZjtxThJylMEjtikJSljNmlJytifF4UBEyE3ufYAAAAASUVORK5CYII="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWkAAAAqCAYAAABxwKo4AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy80BEi2AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAC/UlEQVR4nO3cQWibVQDA8f/7UiVZbcbaQYrVMugKboK9dODAgzdBEHfL0XMv3ocHEWQ7u0PnQT14y23iQbwpHj0pmo7FuVEZJDA6XJcmSPs9D190DTTp2m74qP8fhBzyEt53+fN4ed8XYoxIktKU/dcTkCSNZqQlKWFGWpISZqQlKWFGWpISZqQlKWFGWpISZqQlKWFGWpISZqQlKWFGWpISZqQlKWFGWpISZqQlKWFGWpISNvEkg0KjkwHzwBSwCazHei1/lhOTpOPooD0N+z30PzQ654BLwCtABegBN4EbsV5bezrTlqTj7zA9HRvpwQ++v7JQWbp8fnJxtpydavfzB1eb3db1272fgGuGWpL2d9iejtyTHizJL60sVJZWl6sX5yrZzHNZKM1VspnV5erFlYXKEvDuYJwkaYSj9HTkSjo0OmeAj9bfOf32XCWbyUII/3y2EyO//rmdL3270QceAjvP5Mok6XgoAdWf35ouv3pyIsse55Q8xnivl9+f//r+N8CHsV67u/uL4/44nAIqs+Xs1O5AA5RCYHFqIgNODF6SpH2cnZogG84pWQhhtpxNA2WK7g4ZF+lNoNfu5w/2Wknf2tzOgb+AR4AnPSRptAx44bfN7ef3Wkm3+/kG0Kfo7pBxkV4Hbl5tdhdXl6un8xhjFkLIY4ylEMK1W1u/AD8AXwLjj4hI0v9bAN77pLX1xmcXTr62u6dZCOFKs9sC1ii6O2RkpGO9lodG58b12715gMvnJ8/Wytn0va2dhx83u398caffAr7HQEvSfiLw3ee/92sAH5ybfPmlE6Vqu59vXGl2W58Wpzu+2uu89EHPSb9IscVxhyLQd5/mVUjSMXcGeHPw/ohii2ONItAHPyf976DHd8i8DmwBbVxBS9JhBGCWYrF79DsOhwY3OheOPD1JErFe+/FJxnkjiiQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsKMtCQlzEhLUsL+Bq6oAV5TiqQvAAAAAElFTkSuQmCC"
       preserveAspectRatio="none"
     />
   </g>
@@ -201,7 +201,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">981</text>
+          fill="#FFFFFF" fill-opacity="0.8">952</text>
 
     <!-- Separator -->
     <circle cx="95" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -216,7 +216,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="800"
-          fill="#F44336">↓ -29</text>
+          fill="#8899AA">→ 0</text>
 
     <!-- Separator -->
     <circle cx="185" cy="-3" r="2" fill="#FFFFFF" fill-opacity="0.1"/>
@@ -231,7 +231,7 @@
           font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif"
           font-size="9"
           font-weight="700"
-          fill="#FFFFFF" fill-opacity="0.8">28</text>
+          fill="#FFFFFF" fill-opacity="0.8">4</text>
 
     <!-- Source badge (far right) -->
     <text x="479" y="0"
