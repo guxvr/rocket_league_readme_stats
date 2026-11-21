@@ -7,16 +7,19 @@ Uses 5 progressive scraping layers to bypass blocks (Cloudflare WAF).
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 import time
+from pathlib import Path
+from urllib.parse import quote
 from datetime import date
 import re
 
 log = logging.getLogger(__name__)
 
-DISPLAY_NAME = os.environ.get("EPIC_DISPLAY_NAME", "guxvr")
-PROFILE_URL = f"https://api.tracker.gg/api/v2/rocket-league/standard/profile/epic/{DISPLAY_NAME}"
+DISPLAY_NAME = os.environ.get("EPIC_DISPLAY_NAME", "").strip() or "guxvr"
+PROFILE_URL = f"https://api.tracker.gg/api/v2/rocket-league/standard/profile/epic/{quote(DISPLAY_NAME, safe='')}"
 
 # Internal mapping from TRN to the modes we care about
 PLAYLIST_IDS = {
@@ -91,7 +94,7 @@ def _rank_to_sprite(rank_name: str) -> str:
         elif roman == "I": div_str = "1"
         
     if tier == "grand_champion":
-        return f"grandchampion{div_str}.png"
+        return f"grand_champion{div_str}.png"
     return f"{tier}{div_str}.png"
 
 
@@ -187,7 +190,7 @@ def _scrape_layer2() -> dict:
         captured_data: dict = {}
 
         def intercept_response(response):
-            if "api.tracker.gg" in response.url and "profile/epic" in response.url:
+            if "profile/epic/" in response.url and response.request.resource_type in ("xhr", "fetch"):
                 if response.status == 200:
                     try:
                         captured_data["body"] = response.json()
@@ -198,7 +201,7 @@ def _scrape_layer2() -> dict:
         with sync_playwright() as p:
             is_github_actions = os.environ.get("GITHUB_ACTIONS") == "true"
             browser = p.chromium.launch(
-                headless=not is_github_actions,
+                headless=not (is_github_actions or os.environ.get("BROWSER_HEADLESS", "true").lower() == "false"),
                 args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-blink-features=AutomationControlled"],
             )
             context = browser.new_context(
@@ -247,6 +250,9 @@ def _scrape_layer2() -> dict:
 def _scrape_layer3() -> dict:
     try:
         import requests
+        if os.environ.get("ENABLE_SCRAPER_API", "false").lower() != "true":
+            log.info("Layer 3 - ScraperAPI disabled (set ENABLE_SCRAPER_API=true to use credits).")
+            return {}
         api_key = os.environ.get("SCRAPER_API_KEY")
         if not api_key:
             log.info("Layer 3 - ScraperAPI skipped (SCRAPER_API_KEY not configured).")
@@ -271,7 +277,7 @@ def _scrape_layer3() -> dict:
         log.warning("  requests not installed. Escalating.")
         return {}
     except Exception as exc:
-        log.warning("  Error in Layer 3: %s", exc)
+        log.warning("  Error in Layer 3 (%s); request details omitted to protect API key.", type(exc).__name__)
         return {}
 
 # ---------------------------------------------------------------------------
@@ -334,6 +340,25 @@ def fetch_stats() -> dict:
     """
     result = _empty_result()
 
+    # A browser-exported TRN response provides a free, explicit import path
+    # when the network running the updater cannot access TRN.
+    stats_file = os.environ.get("TRN_STATS_FILE")
+    if stats_file:
+        try:
+            payload = json.loads(Path(stats_file).read_text(encoding="utf-8-sig"))
+            identity = payload.get("data", {}).get("platformInfo", {})
+            exported_name = identity.get("platformUserHandle", "")
+            if exported_name.casefold() != DISPLAY_NAME.casefold():
+                raise ValueError("Exported profile does not match EPIC_DISPLAY_NAME")
+            modes = _parse_api_response(payload)
+            if not modes:
+                raise ValueError("Export contains no ranked stats")
+            result["modes"].update(modes)
+            result.update(source_layer="file", success=True)
+        except (OSError, ValueError, TypeError, AttributeError) as exc:
+            log.error("Could not import TRN_STATS_FILE: %s", exc)
+        return result
+
     layers = [
         (1, _scrape_layer1, "curl_cffi + Direct API"),
         (2, _scrape_layer2, "Playwright"),
@@ -351,7 +376,8 @@ def fetch_stats() -> dict:
             log.info("Data collected via Layer %d (%s).", layer_idx, name)
             return result
 
-    log.error("All layers failed. No data collected.")
+    log.error("All layers failed. Existing cards/history preserved. TRN may block this network; "
+              "try a local run or import a browser response with TRN_STATS_FILE.")
     return result
 
 

@@ -15,6 +15,8 @@ jobs:
     # before the pinned Playwright version provides browser dependencies for it.
     runs-on: ubuntu-24.04
 
+    timeout-minutes: 10
+
     permissions:
       contents: write   # needed for git push
 
@@ -58,32 +60,8 @@ jobs:
         env:
           EPIC_DISPLAY_NAME: ${{ secrets.EPIC_DISPLAY_NAME }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-        run: |
-          max_retries=10
-          retry_delay=30
-          attempt=1
-          success=false
-
-          while [ $attempt -le $max_retries ]; do
-            echo "Attempt $attempt of $max_retries..."
-            if xvfb-run python src/main.py; then
-              echo "Success on attempt $attempt!"
-              success=true
-              break
-            else
-              echo "Failed on attempt $attempt."
-              if [ $attempt -lt $max_retries ]; then
-                echo " Waiting $retry_delay seconds before next attempt..."
-                sleep $retry_delay
-              fi
-              attempt=$((attempt + 1))
-            fi
-          done
-
-          if [ "$success" = false ]; then
-            echo "All $max_retries attempts failed."
-            exit 1
-          fi
+          ENABLE_SCRAPER_API: ${{ vars.ENABLE_SCRAPER_API || 'false' }}
+        run: xvfb-run -a python src/main.py
 
       # ----------------------------------------------------------------
       # 6. Commit and push if changed

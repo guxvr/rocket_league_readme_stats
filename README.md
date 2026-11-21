@@ -63,7 +63,7 @@ Go to **Settings -> Secrets and variables -> Actions -> New repository secret**:
 | Name | Value |
 |---|---|
 | `EPIC_DISPLAY_NAME` | Your TRN display name (e.g., `zen`) (Required) |
-| `SCRAPER_API_KEY` | Optional: Your ScraperAPI key for the resilient 3rd proxy layer to bypass WAF. |
+| `SCRAPER_API_KEY` | Optional: ScraperAPI key; requires `ENABLE_SCRAPER_API=true` to consume credits. |
 
 ### 3. Enable Actions Write Permissions
 
@@ -77,6 +77,36 @@ Go to **Actions -> Update Rocket League Stats -> Run workflow**.
 ### 5. Wait for the Cron Job
 
 The workflow runs automatically every day at **09:00 UTC**.
+
+---
+
+## Blocked extraction and free manual import
+
+HTTP 403 means TRN blocked the request. The public profile HTML alone does not
+contain rankings. Existing cards/history are preserved when extraction fails.
+
+ScraperAPI is disabled by default, even with a configured secret. Set repository
+variable `ENABLE_SCRAPER_API=true` only to explicitly enable credit usage. The
+workflow now attempts collection once, instead of repeating all layers ten times.
+
+For a free manual update, open your profile in a browser, open Developer Tools >
+Network > Fetch/XHR, reload, and save the successful JSON response containing
+`/profile/epic/` in its URL. Save the response body outside the repository.
+If the browser also gets 403, this path is unavailable until TRN allows access.
+Use a fresh response for the configured player:
+
+```powershell
+$env:EPIC_DISPLAY_NAME = "guxvr"
+$env:TRN_STATS_FILE = "C:\path\to\profile.json"
+python src/main.py
+Remove-Item Env:TRN_STATS_FILE
+```
+
+The importer checks the profile name and uses the import day as observation date.
+Do not reuse an old export on later days. Commit `assets/` and `data/` to publish.
+This path makes no network calls. Automatic collection still requires TRN to
+allow access from the runner network. For a local browser collection attempt,
+set `BROWSER_HEADLESS=false`.
 
 ---
 
