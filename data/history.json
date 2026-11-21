@@ -3,156 +3,6 @@
   "modes": {
     "1v1": [
       {
-        "date": "2026-09-21",
-        "mmr": 742,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-22",
-        "mmr": 742,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-23",
-        "mmr": 742,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-24",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-25",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-26",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-27",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-28",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-29",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-09-30",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-01",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-02",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-03",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-04",
-        "mmr": 731,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-05",
-        "mmr": 705,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-06",
-        "mmr": 705,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-07",
-        "mmr": 705,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-08",
-        "mmr": 705,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-10",
-        "mmr": 705,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-12",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-13",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-14",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-15",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-17",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
-        "date": "2026-10-18",
-        "mmr": 720,
-        "rank": "Platinum II",
-        "rank_tier": "platinum"
-      },
-      {
         "date": "2026-10-19",
         "mmr": 733,
         "rank": "Platinum II",
@@ -168,161 +18,17 @@
         "date": "2026-10-21",
         "mmr": 733,
         "rank": "Platinum II",
+        "rank_tier": "platinum"
+      },
+      {
+        "date": "2026-11-18",
+        "mmr": 771,
+        "rank": "Platinum III",
         "rank_tier": "platinum"
       }
     ],
     "2v2": [
       {
-        "date": "2026-09-21",
-        "mmr": 981,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-22",
-        "mmr": 981,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-23",
-        "mmr": 981,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-24",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-25",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-26",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-27",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-28",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-29",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-30",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-01",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-02",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-03",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-04",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-05",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-06",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-07",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-08",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-10",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-12",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-13",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-14",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-15",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-17",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-18",
-        "mmr": 952,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
         "date": "2026-10-19",
         "mmr": 952,
         "rank": "Diamond II",
@@ -336,6 +42,12 @@
       },
       {
         "date": "2026-10-21",
+        "mmr": 952,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-11-18",
         "mmr": 952,
         "rank": "Diamond II",
         "rank_tier": "diamond"
@@ -343,156 +55,6 @@
     ],
     "3v3": [
       {
-        "date": "2026-09-21",
-        "mmr": 895,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-22",
-        "mmr": 922,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-23",
-        "mmr": 922,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-24",
-        "mmr": 909,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-25",
-        "mmr": 909,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-26",
-        "mmr": 949,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-27",
-        "mmr": 949,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-28",
-        "mmr": 939,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-29",
-        "mmr": 918,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-09-30",
-        "mmr": 960,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-01",
-        "mmr": 960,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-02",
-        "mmr": 960,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-03",
-        "mmr": 915,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-04",
-        "mmr": 975,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-05",
-        "mmr": 929,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-06",
-        "mmr": 928,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-07",
-        "mmr": 928,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-08",
-        "mmr": 990,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-10",
-        "mmr": 970,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-12",
-        "mmr": 907,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-13",
-        "mmr": 907,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-14",
-        "mmr": 879,
-        "rank": "Diamond I",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-15",
-        "mmr": 931,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-17",
-        "mmr": 914,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
-        "date": "2026-10-18",
-        "mmr": 924,
-        "rank": "Diamond II",
-        "rank_tier": "diamond"
-      },
-      {
         "date": "2026-10-19",
         "mmr": 914,
         "rank": "Diamond II",
@@ -507,6 +69,12 @@
       {
         "date": "2026-10-21",
         "mmr": 975,
+        "rank": "Diamond II",
+        "rank_tier": "diamond"
+      },
+      {
+        "date": "2026-11-18",
+        "mmr": 976,
         "rank": "Diamond II",
         "rank_tier": "diamond"
       }
